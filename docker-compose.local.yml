@@ -1,0 +1,11 @@
+services:
+
+  nginx:
+    networks:
+      - cms-network
+      - web-gateway
+
+networks:
+
+  web-gateway:
+    external: true

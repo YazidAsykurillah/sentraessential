@@ -1,0 +1,10 @@
+services:
+
+  app:
+    restart: always
+
+  nginx:
+    restart: always
+
+  mysql:
+    restart: always

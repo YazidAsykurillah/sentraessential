@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             SuperAdminSeeder::class,
             CategoriesSeeder::class,
             TagsSeeder::class,
+            WebsiteSettingSeeder::class,
         ]);
     }
 }

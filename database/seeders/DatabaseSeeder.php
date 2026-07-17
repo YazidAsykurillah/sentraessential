@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             TagsSeeder::class,
             WebsiteSettingSeeder::class,
             PageSeoSeeder::class,
+            ContactMessagesSeeder::class,
         ]);
     }
 }

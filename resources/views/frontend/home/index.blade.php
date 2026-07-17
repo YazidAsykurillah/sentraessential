@@ -2,15 +2,15 @@
 
 @section('content')
 
-<section class="py-20">
+<section class="bg-primary py-24">
 
-    <div class="container mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-6">
 
-        <h1 class="text-5xl font-bold mb-4">
+        <h1 class="text-5xl font-bold mb-4 text-white">
             {{ setting('site_name') }}
         </h1>
 
-        <p class="text-lg text-gray-600">
+        <p class="text-xl text-white/80">
             {{ setting('site_tagline') }}
         </p>
 

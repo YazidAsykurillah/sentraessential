@@ -1,23 +1,29 @@
-<footer class="border-t bg-gray-50 mt-20">
+<footer class="border-t bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div>
+                <p class="font-bold text-lg">
+                    {{ setting('company_name') }}
+                </p>
+                <p class="text-gray-600 mt-2">
+                    {{ setting('site_tagline') }}
+                </p>
+            </div>
+            <div>
+                <p class="font-semibold">
+                    Contact
+                </p>
+                <p>{{ setting('email') }}</p>
+                <p>{{ setting('phone') }}</p>
+            </div>
+            <div>
+                <p class="font-semibold">
+                    Address
+                </p>
+                <p>{{ setting('address') }}</p>
+            </div>
 
-    <div class="container mx-auto px-6 py-10">
-
-        <h3 class="font-bold text-lg">
-            {{ setting('company_name') }}
-        </h3>
-
-        <p class="mt-2 text-gray-600">
-            {{ setting('address') }}
-        </p>
-
-        <p class="text-gray-600">
-            {{ setting('email') }}
-        </p>
-
-        <p class="text-gray-600">
-            {{ setting('phone') }}
-        </p>
+        </div>
 
     </div>
-
 </footer>

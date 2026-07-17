@@ -14,11 +14,11 @@
 
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-light text-dark min-h-screen flex flex-col">
 
     @include('frontend.partials.header')
 
-    <main>
+    <main class="flex-1">
         @yield('content')
     </main>
 

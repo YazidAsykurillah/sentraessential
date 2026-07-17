@@ -45,4 +45,16 @@ class WebsiteSettingResource extends Resource
             'edit' => EditWebsiteSetting::route('/{record}/edit'),
         ];
     }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can('view website settings');
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()->can('edit website settings');
+    }
+
+
 }

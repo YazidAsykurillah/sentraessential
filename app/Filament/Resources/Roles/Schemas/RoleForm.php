@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Roles\Schemas;
 
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\CheckboxList;
 use Filament\Schemas\Schema;
 
 class RoleForm
@@ -14,6 +15,10 @@ class RoleForm
                 ->required()
                 ->unique(ignoreRecord: true)
                 ->maxLength(255),
+            CheckboxList::make('permissions')
+                ->relationship('permissions', 'name')
+                ->columns(2)
+                ->searchable(),
         ]);
     }
 }

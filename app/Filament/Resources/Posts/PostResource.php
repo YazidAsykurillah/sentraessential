@@ -47,4 +47,25 @@ class PostResource extends Resource
             'edit' => EditPost::route('/{record}/edit'),
         ];
     }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can('view posts');
+    }
+
+    public static function canCreate(): bool
+    {
+        return auth()->user()->can('create posts');
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()->can('edit posts');
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()->can('delete posts');
+    }
+
 }

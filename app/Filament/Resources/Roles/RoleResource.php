@@ -47,4 +47,25 @@ class RoleResource extends Resource
             'edit' => EditRole::route('/{record}/edit'),
         ];
     }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can('view roles');
+    }
+
+    public static function canCreate(): bool
+    {
+        return auth()->user()->can('create roles');
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()->can('edit roles');
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()->can('delete roles');
+    }
+
 }

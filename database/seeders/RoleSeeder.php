@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class RoleSeeder extends Seeder
 {
@@ -13,17 +14,60 @@ class RoleSeeder extends Seeder
      */
     public function run(): void
     {
-        $roles = [
-            'Super Admin',
-            'Admin',
-            'Editor',
-        ];
+        $superAdmin = Role::firstOrCreate([
+            'name' => 'Super Admin',
+        ]);
+        $superAdmin->syncPermissions(
+            Permission::all()
+        );
 
-        foreach ($roles as $role) {
-            Role::firstOrCreate([
-                'name' => $role,
-                'guard_name' => 'web',
-            ]);
-        }
+        $admin = Role::firstOrCreate([
+            'name' => 'Admin',
+        ]);
+        $admin->syncPermissions([
+            'view categories',
+            'create categories',
+            'edit categories',
+            'delete categories',
+
+            'view tags',
+            'create tags',
+            'edit tags',
+            'delete tags',
+
+            'view posts',
+            'create posts',
+            'edit posts',
+            'delete posts',
+            'publish posts',
+
+            'view website settings',
+            'edit website settings',
+
+            'view page seo',
+            'create page seo',
+            'edit page seo',
+            'delete page seo',
+
+            'view contact messages',
+        ]);
+
+
+        $editor = Role::firstOrCreate([
+            'name' => 'Editor',
+        ]);
+        $editor->syncPermissions([
+            'view categories',
+            'create categories',
+            'edit categories',
+
+            'view tags',
+            'create tags',
+            'edit tags',
+
+            'view posts',
+            'create posts',
+            'edit posts',
+        ]);
     }
 }

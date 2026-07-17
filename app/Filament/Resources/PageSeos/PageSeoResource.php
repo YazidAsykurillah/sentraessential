@@ -47,4 +47,25 @@ class PageSeoResource extends Resource
             'edit' => EditPageSeo::route('/{record}/edit'),
         ];
     }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can('view page seo');
+    }
+
+    public static function canCreate(): bool
+    {
+        return auth()->user()->can('create page seo');
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()->can('edit page seo');
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()->can('delete page seo');
+    }
+
 }

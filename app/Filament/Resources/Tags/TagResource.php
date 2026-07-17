@@ -47,4 +47,26 @@ class TagResource extends Resource
             'edit' => EditTag::route('/{record}/edit'),
         ];
     }
+
+    public static function canViewAny(): bool
+    {
+        return auth()->user()->can('view tags');
+    }
+
+    public static function canCreate(): bool
+    {
+        return auth()->user()->can('create tags');
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()->can('edit tags');
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()->can('delete tags');
+    }
+
+
 }

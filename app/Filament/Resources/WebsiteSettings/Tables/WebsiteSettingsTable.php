@@ -7,6 +7,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
 
 class WebsiteSettingsTable
@@ -21,10 +22,10 @@ class WebsiteSettingsTable
                     ->searchable(),
                 TextColumn::make('company_name')
                     ->searchable(),
-                TextColumn::make('logo')
-                    ->searchable(),
-                TextColumn::make('favicon')
-                    ->searchable(),
+                ImageColumn::make('logo')
+                    ->disk('public'),
+                ImageColumn::make('favicon')
+                    ->disk('public'),
                 TextColumn::make('email')
                     ->label('Email address')
                     ->searchable(),

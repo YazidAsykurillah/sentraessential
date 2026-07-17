@@ -32,4 +32,16 @@ class WebsiteSetting extends Model
         'maintenance_mode',
     ];
 
+
+    protected static function booted(): void
+    {
+        static::saved(function () {
+            cache()->forget('website_settings');
+        });
+
+        static::deleted(function () {
+            cache()->forget('website_settings');
+        });
+    }
+
 }

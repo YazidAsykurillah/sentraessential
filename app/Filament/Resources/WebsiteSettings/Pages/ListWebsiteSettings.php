@@ -4,6 +4,8 @@ namespace App\Filament\Resources\WebsiteSettings\Pages;
 
 use App\Filament\Resources\WebsiteSettings\WebsiteSettingResource;
 use Filament\Resources\Pages\ListRecords;
+use App\Models\WebsiteSetting;
+
 
 class ListWebsiteSettings extends ListRecords
 {
@@ -11,6 +13,10 @@ class ListWebsiteSettings extends ListRecords
 
     protected function getHeaderActions(): array
     {
-        return [];
+        return WebsiteSetting::count() === 0
+        ? [
+            CreateAction::make(),
+        ]
+        : [];
     }
 }

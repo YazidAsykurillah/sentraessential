@@ -21,17 +21,23 @@
                 <a href="{{ route('home') }}" class="text-sm font-medium text-dark hover:text-accent transition-colors duration-200 cursor-pointer">
                     Home
                 </a>
+                <a href="#" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                    Tentang Kami
+                </a>
+                <a href="#" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                    Produk
+                </a>
                 <a href="{{ route('blog.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
                     Blog
                 </a>
                 <a href="{{ route('contact') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
-                    Contact
+                    Kontak
                 </a>
                 <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent-light transition-colors duration-200 cursor-pointer">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
-                    Get a Quote
+                    Minta Penawaran
                 </a>
             </nav>
 

@@ -161,25 +161,14 @@ h1, h2, h3, h4, h5, h6 {
    ============================================ */
 
 .trust-badge {
-    position: relative;
-    padding-left: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    transition: transform 0.2s ease;
 }
 
-.trust-badge::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 60%;
-    background: var(--color-botanical);
-    border-radius: 2px;
-    transition: height 0.3s ease;
-}
-
-.trust-badge:hover::before {
-    height: 80%;
+.trust-badge:hover {
+    transform: translateY(-2px);
 }
 
 /* ============================================

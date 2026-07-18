@@ -24,26 +24,25 @@
         </svg>
     </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-16">
         <div class="max-w-3xl">
             {{-- Badge --}}
             <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-8">
                 <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Semarang, Central Java, Indonesia</span>
+                <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Essential Oils Supplier</span>
             </div>
 
             <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
-                Your Reliable Partner in
-                <span class="text-botanical-light">Premium Essential Oils</span>
+                Supplier Minyak Atsiri Untuk <span class="text-botanical-light">Industri Manufaktur & Exportir Indonesia</span>
             </h1>
 
             <p class="text-lg md:text-lg text-white/70 leading-relaxed mb-10 max-w-2xl">
-                Strategic raw material sourcing partner fulfilling industrial-scale essential oil requirements for pharmaceutical, cosmetic, personal care, and herbal medicine manufacturers across Indonesia.
+                Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, perawatan tubuh (personal care) dan perusahaan exportir Indonesia.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="#products" class="btn-primary">
-                    Explore Products
+                    Lihat Daftar Produk
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
@@ -54,7 +53,7 @@
                         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
                         <rect x="9" y="3" width="6" height="4" rx="1"/>
                     </svg>
-                    Request Sample
+                    Free Sample Produk
                 </a>
             </div>
         </div>
@@ -65,27 +64,59 @@
      SECTION 2: TRUST BADGES BAR
      ============================================ --}}
 <section class="bg-white border-b border-border">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
 
             <div class="trust-badge reveal">
-                <p class="text-sm font-semibold text-dark">100% Pure</p>
-                <p class="text-xs text-muted mt-0.5">Unadulterated Products</p>
+                <div class="shrink-0 w-10 h-10 rounded-full bg-botanical-muted flex items-center justify-center">
+                    <svg class="w-5 h-5 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-dark">100% Pure</p>
+                    <p class="text-xs text-muted mt-0.5">Tingkat Kemurnian</p>
+                </div>
             </div>
 
             <div class="trust-badge reveal reveal-delay-1">
-                <p class="text-sm font-semibold text-dark">Lab-Verified</p>
-                <p class="text-xs text-muted mt-0.5">Pre-Shipment Samples</p>
+                <div class="shrink-0 w-10 h-10 rounded-full bg-earth-muted flex items-center justify-center">
+                    <svg class="w-5 h-5 text-earth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 2v2.789a4 4 0 0 1-.672 2.219l-4.73 7.096A4 4 0 0 0 7.001 20h9.998a4 4 0 0 0 3.322-6.236l-4.728-7.097A4 4 0 0 1 15 4.45V2"/>
+                        <path d="M7 2h10"/>
+                        <path d="M5.5 15h13"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-dark">Lab-Verified</p>
+                    <p class="text-xs text-muted mt-0.5">Pre-Shipment Samples</p>
+                </div>
             </div>
 
             <div class="trust-badge reveal reveal-delay-2">
-                <p class="text-sm font-semibold text-dark">PKP Certified</p>
-                <p class="text-xs text-muted mt-0.5">Complete Tax Documentation</p>
+                <div class="shrink-0 w-10 h-10 rounded-full bg-botanical-muted flex items-center justify-center">
+                    <svg class="w-5 h-5 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-dark">PKP Certified</p>
+                    <p class="text-xs text-muted mt-0.5">Complete Tax Documentation</p>
+                </div>
             </div>
 
             <div class="trust-badge reveal reveal-delay-3">
-                <p class="text-sm font-semibold text-dark">Integrated Supply</p>
-                <p class="text-xs text-muted mt-0.5">Direct Distillation Network</p>
+                <div class="shrink-0 w-10 h-10 rounded-full bg-earth-muted flex items-center justify-center">
+                    <svg class="w-5 h-5 text-earth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-dark">Integrated Supply</p>
+                    <p class="text-xs text-muted mt-0.5">Direct Distillation Network</p>
+                </div>
             </div>
 
         </div>
@@ -103,13 +134,13 @@
             <div class="reveal">
                 <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">About Our Company</p>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-8">
-                    Trusted Essential Oil Supplier Since Day One
+                    Partner Kebutuhan Minyak Atsiri Anda
                 </h2>
                 <p class="text-base text-dark leading-relaxed mb-6">
-                    Sentra Essential Oil is a trusted supplier based in Semarang, Central Java. We operate as a strategic raw material sourcing partner, fulfilling industrial-scale essential oil requirements for domestic manufacturers and serving as a stable-volume supplier for Indonesian essential oil exporters.
+                    Sentra Essential Oil adalah supplier minyak atsiri yang bergerak sebagai mitra pengadaan bahan baku strategis yang melayani pemenuhan kebutuhan minyak atsiri berskala industri untuk manufaktur dalam negeri (sektor farmasi, kosmetik, herbal, jamu dan produk perawatan tubuh) serta menjadi vendor pasokan volume stabil bagi perusahaan eksportir minyak atsiri di Indonesia.
                 </p>
                 <p class="text-base text-dark leading-relaxed mb-8">
-                    By managing a supply chain directly integrated with small-scale distillation centers across Central Java's surrounding regions, we ensure a sustainable product supply to maintain our business partners' production continuity.
+                    Melalui pengelolaan <i>supply chain</i> yang terintegrasi dengan sentra penyulingan di berbagai daerah, kami mampu mengamankan ketersediaan produk secara berkelanjutan demi menjaga kontinuitas produksi mitra bisnis kami.
                 </p>
                 <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all duration-200 cursor-pointer">
                     Learn more about us
@@ -196,12 +227,12 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
 
         <div class="text-center mb-14 reveal">
-            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Our Products</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Our Featured Products</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Flagship Essential Oil Portfolio
+                Produk Minyak Atsiri Unggulan Kami
             </h2>
             <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
-                Every batch undergoes physical filtration and standardized quality control, guaranteeing 100% pure, unadulterated essential oils.
+                Semua minyak atsiri yang kami suplai selalu melewati proses quality control yang ketat untuk menjamin 100% tingkat kemurnian.
             </p>
         </div>
 

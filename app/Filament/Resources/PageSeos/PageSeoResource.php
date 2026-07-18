@@ -19,7 +19,7 @@ class PageSeoResource extends Resource
     protected static ?string $model = PageSeo::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-    protected static string|\UnitEnum|null $navigationGroup = 'System';
+    protected static string|\UnitEnum|null $navigationGroup = 'Website';
     protected static ?int $navigationSort = 2;
 
     public static function form(Schema $schema): Schema

@@ -2,7 +2,7 @@ services:
 
   nginx:
     networks:
-      - cms-network
+      - sentraessential-network
       - web-gateway
 
 networks:

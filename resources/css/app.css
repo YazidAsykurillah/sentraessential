@@ -6,18 +6,323 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    --color-primary: #2563eb;
-    --color-secondary: #64748b;
-    --color-accent: #f97316;
+    /* Olive green — from the droplet & leaves in the logo */
+    --color-primary: #4E5A28;
+    --color-primary-light: #5C6630;
+    --color-secondary: #6B7A3D;
 
-    --color-success: #22c55e;
-    --color-warning: #f59e0b;
-    --color-danger: #ef4444;
-    --color-info: #3b82f6;
+    /* Warm bronze/brown — from the hand accent & subtitle text */
+    --color-accent: #9B7340;
+    --color-accent-light: #B08A52;
 
-    --color-light: #f8fafc;
-    --color-dark: #0f172a;
+    /* Botanical greens — derived from the olive in the logo */
+    --color-botanical: #5C6630;
+    --color-botanical-light: #7A8B45;
+    --color-botanical-muted: #EEF2E2;
+
+    /* Warm earth tones */
+    --color-earth: #8B6D3F;
+    --color-earth-light: #A07D4F;
+    --color-earth-muted: #F3ECE0;
+
+    --color-success: #5C6630;
+    --color-warning: #B08A52;
+    --color-danger: #C45E4A;
+    --color-info: #7A8B45;
+
+    /* Cream background — from the logo background */
+    --color-light: #FAF6F0;
+    --color-dark: #2C2A24;
+
+    --color-surface: #FFFFFF;
+    --color-surface-alt: #F5EFE6;
+    --color-border: #E5DDD0;
+    --color-muted: #8C8272;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ============================================
+   HERO BACKGROUND PATTERN
+   ============================================ */
+
+.hero-pattern {
+    background-image:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(92, 102, 48, 0.2), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(155, 115, 64, 0.15), transparent);
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #2C2A24 0%, #3D3B28 30%, #4E5A28 60%, #2C2A24 100%);
+}
+
+/* ============================================
+   GLASSMORPHISM NAVBAR
+   ============================================ */
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+.glass-nav.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* ============================================
+   CARD STYLES
+   ============================================ */
+
+.product-card {
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-botanical);
+}
+
+.feature-card {
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 24px -8px rgba(155, 115, 64, 0.15);
+}
+
+.industry-card {
+    background: var(--color-surface-alt);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+    background: var(--color-botanical-muted);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   TRUST BADGE STYLES
+   ============================================ */
+
+.trust-badge {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.trust-badge::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background: var(--color-botanical);
+    border-radius: 2px;
+    transition: height 0.3s ease;
+}
+
+.trust-badge:hover::before {
+    height: 80%;
+}
+
+/* ============================================
+   COUNTER ANIMATION
+   ============================================ */
+
+@keyframes countPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-variant-numeric: tabular-nums;
+}
+
+.stat-number.counting {
+    animation: countPulse 0.3s ease;
+}
+
+/* ============================================
+   BOTANICAL DECORATIONS
+   ============================================ */
+
+.botanical-line {
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--color-botanical) 20%,
+        var(--color-botanical) 80%,
+        transparent 100%
+    );
+    height: 2px;
+    opacity: 0.3;
+}
+
+.section-divider {
+    position: relative;
+}
+
+.section-divider::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--color-botanical);
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+
+.section-divider-center::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   CTA BUTTON STYLES
+   ============================================ */
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    background: var(--color-accent);
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--color-accent-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(155, 115, 64, 0.3);
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    background: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    border-color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-menu.open {
+    max-height: 300px;
+}
+
+/* ============================================
+   ACCESSIBILITY: REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .product-card,
+    .feature-card,
+    .industry-card {
+        transition: none;
+    }
+
+    .product-card:hover,
+    .industry-card:hover {
+        transform: none;
+    }
+
+    .btn-primary:hover,
+    .btn-outline:hover {
+        transform: none;
+    }
+
+    .stat-number.counting {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
 }

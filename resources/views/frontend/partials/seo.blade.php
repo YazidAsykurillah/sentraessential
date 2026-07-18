@@ -1,3 +1,10 @@
+@if(setting('favicon'))
+    <link rel="icon" href="{{ Storage::disk('public')->url(setting('favicon')) }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ Storage::disk('public')->url(setting('favicon')) }}" type="image/x-icon">
+@else
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+@endif
+
 <title>
     {{ $seoTitle ?? setting('default_seo_title') }}
 </title>

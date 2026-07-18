@@ -1,5 +1,5 @@
 <footer class="border-t bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 py-12">
+    <div class="max-w-7xl mx-auto px-8 py-12">
         <div class="grid md:grid-cols-3 gap-8">
             <div>
                 <p class="font-bold text-lg">

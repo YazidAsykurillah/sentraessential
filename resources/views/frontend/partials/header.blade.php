@@ -1,5 +1,5 @@
 <header class="border-b bg-white">
-    <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="max-w-7xl mx-auto px-8 py-4">
         <div class="flex items-center justify-between">
             <a href="{{ route('home') }}" class="text-xl font-bold">
                 {{ setting('site_name') }}

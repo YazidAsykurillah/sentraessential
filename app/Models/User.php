@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Panel;
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable, HasRoles;
@@ -54,4 +56,10 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
     
+    public function canAccessPanel(Panel $panel): bool
+    {
+        // Mengizinkan semua user yang berhasil login untuk mengakses panel admin
+        // Anda bisa mengubah ini dengan mengecek role, contoh: return $this->hasRole('admin');
+        return true;
+    }
 }

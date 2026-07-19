@@ -27,9 +27,9 @@
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-16">
         <div class="max-w-3xl">
             {{-- Badge --}}
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
                 <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Essential Oils Supplier</span>
+                <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Your Trusted Supplier of Essential Oils</span>
             </div>
 
             <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
@@ -37,12 +37,12 @@
             </h1>
 
             <p class="text-lg md:text-lg text-white/70 leading-relaxed mb-10 max-w-2xl">
-                Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, perawatan tubuh (personal care) dan perusahaan exportir Indonesia.
+                Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, personal care dan perusahaan exportir Indonesia.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#products" class="btn-primary">
-                    Lihat Daftar Produk
+                <a href="#featured-products" class="btn-primary">
+                    Lihat Produk Kami
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
@@ -53,7 +53,7 @@
                         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
                         <rect x="9" y="3" width="6" height="4" rx="1"/>
                     </svg>
-                    Free Sample Produk
+                    Dapatkan Sample Gratis
                 </a>
             </div>
         </div>
@@ -223,16 +223,16 @@
 {{-- ============================================
      SECTION 4: PRODUCT PORTFOLIO
      ============================================ --}}
-<section class="bg-white" id="products">
+<section class="bg-white" id="featured-products">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
 
         <div class="text-center mb-14 reveal">
-            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Our Featured Products</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Featured Products</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Produk Minyak Atsiri Unggulan Kami
+                Produk Minyak Atsiri Unggulan
             </h2>
             <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
-                Semua minyak atsiri yang kami suplai selalu melewati proses quality control yang ketat untuk menjamin 100% tingkat kemurnian.
+                Berikut beberapa produk unggulan kami, setiap produk selalu melewati proses filtrasi dan standardisasi kualitas demi menjamin 100% kemurnian.
             </p>
         </div>
 
@@ -253,7 +253,13 @@
                     Widely used in insect repellents, aromatherapy, and personal care products. Sourced from premium citronella grass.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border">
-                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Industrial Grade</span>
+                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                        Lihat Detail Produk
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -271,7 +277,13 @@
                     Valued in traditional herbal medicine and pharmaceutical formulations. Extracted from select betel leaves.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border">
-                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Pharmaceutical Grade</span>
+                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                        Lihat Detail Produk
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -292,7 +304,13 @@
                     Essential for dental, cosmetic, and flavoring applications. Rich eugenol content from Central Java cloves.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border">
-                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Premium Grade</span>
+                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                        Lihat Detail Produk
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -310,11 +328,28 @@
                     Popular in wellness, food manufacturing, and personal care. Warm, spicy profile from Java ginger roots.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border">
-                    <span class="text-xs font-semibold text-accent uppercase tracking-wide">Export Grade</span>
+                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                        Lihat Detail Produk
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
         </div>
+
+        <div class="mt-14 text-center reveal">
+            <a href="#products" class="btn-primary group">
+                Lihat Semua Produk
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+
     </div>
 </section>
 
@@ -327,10 +362,10 @@
         <div class="text-center mb-14 reveal">
             <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Why Choose Us</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Built on Product Integrity
+                Supplier Minyak Atsiri Yang Berintegritas
             </h2>
             <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
-                We prioritize product integrity as our highest operational standard, ensuring seamless transactions and verified quality for every partner.
+                Kami mengutamakan integritas produk sebagai standar operasional tertinggi, memastikan suplai yang stabil dan kualitas terbaik bagi setiap mitra.
             </p>
         </div>
 
@@ -346,7 +381,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Physical Filtration & QC</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Every batch undergoes standardized physical filtration and quality control to guarantee 100% purity.
+                    Setiap batch minyak atsiri kami menjalani proses filtrasi fisik dan quality control yang terstandarisasi untuk menjamin 100% kemurnian.
                 </p>
             </div>
 
@@ -359,7 +394,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Pre-Shipment Sampling</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    We provide product samples before shipment for your laboratory verification and approval.
+                    Kami menyediakan sampel produk sebelum pengiriman untuk verifikasi dan persetujuan laboratorium Anda.
                 </p>
             </div>
 
@@ -376,7 +411,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Complete Documentation</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Full domestic trade documentation including Tax Invoices and PKP issuance for seamless transactions.
+                    Dokumentasi perdagangan domestik lengkap termasuk Faktur Pajak dan penerbitan PKP untuk transaksi yang lancar.
                 </p>
             </div>
 
@@ -390,7 +425,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Sustainable Supply Chain</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Directly integrated with distillation centers across Central Java for reliable, continuous supply.
+                    Terintegrasi langsung dengan pusat distilasi di seluruh Indonesia untuk pasokan yang andal dan berkelanjutan.
                 </p>
             </div>
 
@@ -404,7 +439,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Industrial-Scale Fulfillment</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Capable of fulfilling large-volume orders for manufacturers and stable-volume export requirements.
+                    Mampu memenuhi pesanan volume besar untuk produsen dan kebutuhan ekspor volume stabil.
                 </p>
             </div>
 
@@ -420,7 +455,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Dedicated Partnership</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Committed to facilitating seamless transactions and maintaining long-term business partnerships.
+                    Berkomitmen untuk memfasilitasi transaksi yang lancar dan menjaga kemitraan bisnis jangka panjang.
                 </p>
             </div>
 
@@ -440,10 +475,10 @@
             <div class="lg:col-span-2 reveal">
                 <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Industries</p>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-6">
-                    Sectors We Serve
+                    Industri Yang Kami Layani
                 </h2>
                 <p class="text-base text-dark leading-relaxed">
-                    Our essential oils power production lines across Indonesia's key manufacturing sectors.
+                    Minyak atsiri kami mendukung lini produksi di sektor manufaktur utama dan perusahaan exportir di Indonesia.
                 </p>
             </div>
 
@@ -453,28 +488,30 @@
                 <div class="industry-card p-5 text-center cursor-pointer reveal">
                     <div class="w-11 h-11 mx-auto mb-3 rounded-lg bg-white flex items-center justify-center">
                         <svg class="w-5 h-5 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/>
+                            <path d="m8.5 8.5 7 7"/>
                         </svg>
                     </div>
-                    <p class="text-sm font-semibold text-dark">Pharmaceutical</p>
+                    <p class="text-sm font-semibold text-dark">Farmasi</p>
                 </div>
 
                 <div class="industry-card p-5 text-center cursor-pointer reveal reveal-delay-1">
                     <div class="w-11 h-11 mx-auto mb-3 rounded-lg bg-white flex items-center justify-center">
                         <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                            <line x1="9" y1="9" x2="9.01" y2="9"/>
-                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                            <path d="M5 3v4"/>
+                            <path d="M3 5h4"/>
                         </svg>
                     </div>
-                    <p class="text-sm font-semibold text-dark">Cosmetic</p>
+                    <p class="text-sm font-semibold text-dark">Kosmetik</p>
                 </div>
 
                 <div class="industry-card p-5 text-center cursor-pointer reveal reveal-delay-2">
                     <div class="w-11 h-11 mx-auto mb-3 rounded-lg bg-white flex items-center justify-center">
                         <svg class="w-5 h-5 text-earth-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7 2.9 7 2.9s-2.28 6.16-3.29 7.16C2.57 11 2 12.1 2 13.25c0 2.22 1.8 4.05 4 4.05z"/>
+                            <path d="M12.56 6.6A10.97 10.97 0 0 1 14 8c2 2 3 4 3 6a5 5 0 0 1-10 0"/>
+                            <path d="M16.4 9.17A2 2 0 0 1 19.5 9c1.4.63 2.5 1.57 2.5 3a4 4 0 0 1-8 0"/>
                         </svg>
                     </div>
                     <p class="text-sm font-semibold text-dark">Personal Care</p>
@@ -483,21 +520,19 @@
                 <div class="industry-card p-5 text-center cursor-pointer reveal reveal-delay-3">
                     <div class="w-11 h-11 mx-auto mb-3 rounded-lg bg-white flex items-center justify-center">
                         <svg class="w-5 h-5 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
                         </svg>
                     </div>
-                    <p class="text-sm font-semibold text-dark">Herbal Medicine</p>
+                    <p class="text-sm font-semibold text-dark">Herbal</p>
                 </div>
 
                 <div class="industry-card p-5 text-center cursor-pointer reveal reveal-delay-4">
                     <div class="w-11 h-11 mx-auto mb-3 rounded-lg bg-white flex items-center justify-center">
                         <svg class="w-5 h-5 text-botanical-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="1" y="3" width="15" height="13"/>
-                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
-                            <circle cx="5.5" cy="18.5" r="2.5"/>
-                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                            <path d="M2 12h20"/>
                         </svg>
                     </div>
                     <p class="text-sm font-semibold text-dark">Export</p>
@@ -509,33 +544,188 @@
 </section>
 
 {{-- ============================================
-     SECTION 7: STATS / METRICS COUNTER
+     SECTION 7: TESTIMONIALS
      ============================================ --}}
-<section class="hero-gradient relative overflow-hidden">
-    <div class="absolute inset-0 hero-pattern"></div>
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-24">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+<section class="bg-surface-alt" id="testimonials">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
 
-            <div class="text-center reveal">
-                <p class="stat-number text-4xl md:text-5xl font-bold text-white" data-count="4">0</p>
-                <p class="text-sm text-white/60 mt-2">Flagship Products</p>
+        <div class="text-center mb-16 reveal">
+            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Testimonial</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
+                Apa Kata Mitra Kami
+            </h2>
+            <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
+                Kepercayaan dan kepuasan mitra bisnis adalah prioritas utama kami. Berikut adalah pengalaman mereka bekerja sama dengan Sentra Essential Oil.
+            </p>
+        </div>
+
+        <div x-data="{
+                scrollLeft() { $refs.slider.scrollBy({ left: -350, behavior: 'smooth' }); },
+                scrollRight() { $refs.slider.scrollBy({ left: 350, behavior: 'smooth' }); }
+            }" class="relative w-full">
+            
+            <div class="flex justify-end gap-3 mb-6 reveal">
+                <button @click="scrollLeft" class="w-10 h-10 rounded-full border border-border flex items-center justify-center text-dark hover:bg-surface transition-colors" aria-label="Previous">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button @click="scrollRight" class="w-10 h-10 rounded-full border border-border flex items-center justify-center text-dark hover:bg-surface transition-colors" aria-label="Next">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
             </div>
 
-            <div class="text-center reveal reveal-delay-1">
-                <p class="stat-number text-4xl md:text-5xl font-bold text-white" data-count="5">0</p>
-                <p class="text-sm text-white/60 mt-2">Industries Served</p>
-            </div>
+            <div x-ref="slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 reveal [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                
+                {{-- Testimonial 1 --}}
+                <div class="snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col">
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-dark leading-relaxed mb-8 flex-grow">
+                            "Kualitas minyak atsiri dari Sentra sangat konsisten. Proses pengiriman selalu tepat waktu dan dilengkapi dengan dokumen pendukung yang lengkap. Sangat merekomendasikan untuk kebutuhan industri farmasi."
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h4 class="font-bold text-dark text-sm mb-0.5">Budi Santoso</h4>
+                                <p class="text-xs font-semibold text-accent">Direktur Pengadaan</p>
+                            </div>
+                            <div class="sm:text-right">
+                                <p class="text-xs text-muted">Perusahaan Farmasi Nasional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="text-center reveal reveal-delay-2">
-                <p class="stat-number text-4xl md:text-5xl font-bold text-botanical-light" data-count="100" data-suffix="%">0</p>
-                <p class="text-sm text-white/60 mt-2">Pure & Unadulterated</p>
-            </div>
+                {{-- Testimonial 2 --}}
+                <div class="snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col">
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-dark leading-relaxed mb-8 flex-grow">
+                            "Kami bermitra dengan Sentra Essential Oil selama lebih dari dua tahun. Kemurnian Citronella Oil mereka sangat memenuhi standar tinggi yang kami tetapkan untuk produk personal care."
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h4 class="font-bold text-dark text-sm mb-0.5">Ratna Mulyadi</h4>
+                                <p class="text-xs font-semibold text-accent">R&D Manager</p>
+                            </div>
+                            <div class="sm:text-right">
+                                <p class="text-xs text-muted">Produsen Personal Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="text-center reveal reveal-delay-3">
-                <p class="stat-number text-4xl md:text-5xl font-bold text-white" data-count="10" data-suffix="+">0</p>
-                <p class="text-sm text-white/60 mt-2">Distillation Partners</p>
-            </div>
+                {{-- Testimonial 3 --}}
+                <div class="snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col">
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-dark leading-relaxed mb-8 flex-grow">
+                            "Kapasitas pasokan yang besar dan stabil membuat Sentra menjadi partner andalan kami untuk memenuhi permintaan pasar ekspor. Harga kompetitif tanpa mengorbankan kualitas."
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h4 class="font-bold text-dark text-sm mb-0.5">Hendra Wijaya</h4>
+                                <p class="text-xs font-semibold text-accent">Supply Chain Head</p>
+                            </div>
+                            <div class="sm:text-right">
+                                <p class="text-xs text-muted">Perusahaan Eksportir</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                {{-- Testimonial 4 --}}
+                <div class="snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col">
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-dark leading-relaxed mb-8 flex-grow">
+                            "Essential oil dari Sentra sangat mudah diformulasikan ke dalam produk-produk skincare kami karena 100% murni tanpa campuran bahan sintetis. Sangat memuaskan."
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h4 class="font-bold text-dark text-sm mb-0.5">Anita Suryani</h4>
+                                <p class="text-xs font-semibold text-accent">Chief Formulator</p>
+                            </div>
+                            <div class="sm:text-right">
+                                <p class="text-xs text-muted">Pabrik Kosmetik Organik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Testimonial 5 --}}
+                <div class="snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col">
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-dark leading-relaxed mb-8 flex-grow">
+                            "Untuk kebutuhan produksi skala menengah, Sentra selalu responsif dan fleksibel. Minyak nilam dan cengkeh mereka memiliki aroma terapi yang sangat kuat dan murni."
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h4 class="font-bold text-dark text-sm mb-0.5">Faisal Rahman</h4>
+                                <p class="text-xs font-semibold text-accent">Pemilik Brand</p>
+                            </div>
+                            <div class="sm:text-right">
+                                <p class="text-xs text-muted">Aromaterapi Lokal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Testimonial 6 --}}
+                <div class="snap-start shrink-0 w-[85vw] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col">
+                        <div class="flex items-center gap-1 text-amber-500 mb-6">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="text-dark leading-relaxed mb-8 flex-grow">
+                            "Klien-klien kami sangat menyukai aroma essential oil yang diaplikasikan di spa kami. Pengiriman selalu on-time yang membuat manajemen operasional kami menjadi sangat tenang."
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <h4 class="font-bold text-dark text-sm mb-0.5">Siska Putri</h4>
+                                <p class="text-xs font-semibold text-accent">Manager Operasional</p>
+                            </div>
+                            <div class="sm:text-right">
+                                <p class="text-xs text-muted">Spa & Wellness Center</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
@@ -547,24 +737,24 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
         <div class="max-w-3xl mx-auto text-center reveal">
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight mb-6">
-                Ready to Secure Your Essential Oil Supply?
+                Butuh Minyak Atsiri Untuk Bisnis Anda?
             </h2>
             <p class="text-base text-dark leading-relaxed mb-10 max-w-2xl mx-auto">
-                We're ready to be your reliable partner in supplying premium essential oils for your business. Contact us for product availability, pricing, and pre-shipment samples.
+                Sentra Essential siap menjadi partner terpercaya dalam penyediaan minyak atsiri berkualitas untuk bisnis Anda. Hubungi kami untuk informasi ketersediaan produk, harga, dan sampel pra-pengiriman.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('contact') }}" class="btn-primary !bg-primary hover:!bg-primary-light">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
-                    Contact Us Today
+                    Hubungi Kami
                 </a>
                 <a href="{{ route('contact') }}" class="btn-primary !bg-accent hover:!bg-accent-light">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
                         <rect x="9" y="3" width="6" height="4" rx="1"/>
                     </svg>
-                    Request Free Sample
+                    Dapatkan Sample Gratis
                 </a>
             </div>
         </div>

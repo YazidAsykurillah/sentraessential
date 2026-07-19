@@ -9,53 +9,61 @@
     {{-- Background pattern overlay --}}
     <div class="absolute inset-0 hero-pattern"></div>
 
-    {{-- Decorative botanical SVG --}}
-    <div class="absolute top-0 right-0 w-1/2 h-full opacity-[0.04] pointer-events-none">
-        <svg viewBox="0 0 600 800" fill="none" class="w-full h-full">
-            <path d="M300 50 C300 50 450 200 450 400 C450 600 300 750 300 750" stroke="white" stroke-width="1.5"/>
-            <path d="M300 150 C350 150 420 220 420 350" stroke="white" stroke-width="1"/>
-            <path d="M300 250 C250 250 180 320 180 450" stroke="white" stroke-width="1"/>
-            <path d="M300 350 C350 350 400 400 400 500" stroke="white" stroke-width="1"/>
-            <path d="M300 450 C250 450 200 500 200 600" stroke="white" stroke-width="1"/>
-            <ellipse cx="420" cy="350" rx="30" ry="50" stroke="white" stroke-width="0.8" transform="rotate(-30 420 350)"/>
-            <ellipse cx="180" cy="450" rx="30" ry="50" stroke="white" stroke-width="0.8" transform="rotate(30 180 450)"/>
-            <ellipse cx="400" cy="500" rx="25" ry="40" stroke="white" stroke-width="0.8" transform="rotate(-20 400 500)"/>
-            <ellipse cx="200" cy="600" rx="25" ry="40" stroke="white" stroke-width="0.8" transform="rotate(20 200 600)"/>
-        </svg>
-    </div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+            
+            {{-- Left Column: Content --}}
+            <div class="max-w-2xl reveal">
+                {{-- Badge --}}
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
+                    <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
+                    <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Your Trusted Supplier of Essential Oils</span>
+                </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-16">
-        <div class="max-w-3xl">
-            {{-- Badge --}}
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
-                <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Your Trusted Supplier of Essential Oils</span>
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+                    Supplier Minyak Atsiri Untuk <span class="text-botanical-light">Industri Manufaktur & Exportir Indonesia</span>
+                </h1>
+
+                <p class="text-lg md:text-lg text-white/70 leading-relaxed mb-10 max-w-xl">
+                    Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, personal care dan perusahaan exportir Indonesia.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#featured-products" class="btn-primary">
+                        Lihat Produk Kami
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                    <a href="{{ route('contact') }}" class="btn-outline">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                            <rect x="9" y="3" width="6" height="4" rx="1"/>
+                        </svg>
+                        Dapatkan Sample Gratis
+                    </a>
+                </div>
             </div>
 
-            <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
-                Supplier Minyak Atsiri Untuk <span class="text-botanical-light">Industri Manufaktur & Exportir Indonesia</span>
-            </h1>
+            {{-- Right Column: Image --}}
+            <div class="relative hidden lg:block reveal reveal-delay-2">
+                {{-- Decorative background blob/border --}}
+                <div class="absolute -inset-4 bg-white/5 rounded-[2rem] transform rotate-3"></div>
+                
+                {{-- Main Image --}}
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3] group">
+                    <img src="{{ asset('images/hero_section_1.webp') }}" 
+                         alt="Bulk Essential Oils Ready for Export" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    
+                    {{-- Overlay gradient for premium feel --}}
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent"></div>
+                    
 
-            <p class="text-lg md:text-lg text-white/70 leading-relaxed mb-10 max-w-2xl">
-                Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, personal care dan perusahaan exportir Indonesia.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#featured-products" class="btn-primary">
-                    Lihat Produk Kami
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"/>
-                        <polyline points="12 5 19 12 12 19"/>
-                    </svg>
-                </a>
-                <a href="{{ route('contact') }}" class="btn-outline">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
-                        <rect x="9" y="3" width="6" height="4" rx="1"/>
-                    </svg>
-                    Dapatkan Sample Gratis
-                </a>
+                </div>
             </div>
+
         </div>
     </div>
 </section>

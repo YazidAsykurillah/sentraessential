@@ -21,7 +21,7 @@
                 <a href="{{ route('home') }}" class="text-sm font-medium text-dark hover:text-accent transition-colors duration-200 cursor-pointer">
                     Home
                 </a>
-                <a href="#" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('about') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
                     Tentang Kami
                 </a>
                 <a href="#" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">

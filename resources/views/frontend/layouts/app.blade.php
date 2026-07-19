@@ -28,5 +28,6 @@
 
     @include('frontend.partials.footer')
 
+    @include('frontend.partials.scripts')
 </body>
 </html>

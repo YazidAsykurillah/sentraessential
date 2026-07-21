@@ -19,4 +19,19 @@ class Product extends Model
         'meta_title',
         'meta_description',
     ];
+
+    protected static function booted()
+    {
+        static::deleted(function ($product) {
+            if ($product->image) {
+                \Illuminate\Support\Facades\Storage::disk('public')->delete($product->image);
+            }
+        });
+
+        static::updating(function ($product) {
+            if ($product->isDirty('image') && $product->getOriginal('image')) {
+                \Illuminate\Support\Facades\Storage::disk('public')->delete($product->getOriginal('image'));
+            }
+        });
+    }
 }

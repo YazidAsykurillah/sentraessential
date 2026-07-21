@@ -8,20 +8,48 @@
 <section class="hero-gradient relative overflow-hidden">
     <div class="absolute inset-0 hero-pattern"></div>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24 text-center">
-        <div class="max-w-3xl mx-auto reveal">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
-                <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                <span class="text-xs font-medium text-white/80 tracking-wide uppercase">About Sentra Essential</span>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            {{-- Text Content --}}
+            <div class="max-w-2xl lg:col-span-7 reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
+                    <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
+                    <span class="text-xs font-medium text-white/80 tracking-wide uppercase">About Sentra Essential</span>
+                </div>
+
+                <h1 class="font-heading text-5xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+                    Mitra Strategis <br class="hidden md:block"> <span class="text-botanical-light">Kebutuhan Minyak Atsiri Anda</span>
+                </h1>
+
+                <p class="text-base md:text-base text-white/60 leading-relaxed mb-10 max-w-xl">
+                    Berkomitmen menghadirkan 100% minyak atsiri murni langsung dari sentra penyulingan terbaik di Indonesia untuk mendukung keberlanjutan industri Anda.
+                </p>
             </div>
 
-            <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-6">
-                Mitra Strategis Untuk Kebutuhan <span class="text-botanical-light">Bahan Baku Atsiri</span>
-            </h1>
+            {{-- Image Content --}}
+            <div class="relative hidden lg:block lg:col-span-5 reveal reveal-delay-2">
+                <div class="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-2xl border border-white/10">
+                    <img src="{{ asset('images/about_hero.png') }}" alt="About Sentra Essential" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-dark/40 to-transparent"></div>
+                </div>
+                
+                {{-- Decorative element --}}
+                <div class="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-white/20">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-botanical rounded-full flex items-center justify-center text-white">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">100% Purity</p>
+                            <p class="text-xs text-white/70">Guaranteed Quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <p class="text-lg md:text-lg text-white/70 leading-relaxed mb-0 max-w-2xl mx-auto">
-                Berkomitmen menghadirkan 100% minyak atsiri murni langsung dari sentra penyulingan terbaik di Indonesia untuk mendukung keberlanjutan industri Anda.
-            </p>
         </div>
     </div>
 </section>

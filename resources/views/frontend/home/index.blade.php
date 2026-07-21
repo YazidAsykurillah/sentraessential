@@ -9,7 +9,7 @@
     {{-- Background pattern overlay --}}
     <div class="absolute inset-0 hero-pattern"></div>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-16">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             
             {{-- Left Column: Content --}}

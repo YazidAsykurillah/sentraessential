@@ -46,8 +46,8 @@ class ProductForm
                         $path = 'products/' . $filename;
 
                         $manager = new \Intervention\Image\ImageManager(new \Intervention\Image\Drivers\Gd\Driver());
-                        $image = $manager->read($file->getRealPath());
-                        $encoded = $image->toWebp(90);
+                        $image = $manager->decodePath($file->getRealPath());
+                        $encoded = $image->encode(new \Intervention\Image\Encoders\WebpEncoder(90));
 
                         \Illuminate\Support\Facades\Storage::disk('public')->put($path, (string) $encoded);
 

@@ -246,17 +246,25 @@
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            {{-- Citronella Oil --}}
+            @forelse($featuredProducts as $product)
             <div class="product-card p-6 cursor-pointer reveal flex flex-col">
                 <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="{{ asset('images/products/product_citronella.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Citronella Oil">
+                    <img src="{{ $product->image ? asset('storage/' . $product->image) : 'https://placehold.co/800x600/e2e8f0/475569?text=' . urlencode($product->english_name) }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="{{ $product->english_name }}">
                 </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Citronella Oil</h3>
+                <div class="mb-2">
+                    <h3 class="font-heading text-lg font-bold text-dark mb-1">{{ $product->indonesian_name }}</h3>
+                    <span class="block text-sm font-medium text-dark/80">{{ $product->english_name }}</span>
+                </div>
+                @if($product->botanical_name)
+                <span class="block text-xs font-semibold text-dark/70 uppercase tracking-wider italic mb-4">({{ $product->botanical_name }})</span>
+                @else
+                <span class="block text-xs font-semibold text-transparent uppercase tracking-wider italic mb-4">-</span>
+                @endif
                 <p class="text-sm text-dark leading-relaxed mb-6">
-                    Widely used in insect repellents, aromatherapy, and personal care products. Sourced from premium citronella grass.
+                    {{ $product->short_description }}
                 </p>
                 <div class="mt-auto pt-4 border-t border-border">
-                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                    <a href="{{ route('product.show', $product->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
                         Lihat Detail Produk
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -265,66 +273,11 @@
                     </a>
                 </div>
             </div>
-
-            {{-- Betel Leaf Oil --}}
-            <div class="product-card p-6 cursor-pointer reveal reveal-delay-1 flex flex-col">
-                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="{{ asset('images/products/product_betel_leaf.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Betel Leaf Oil">
-                </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Betel Leaf Oil</h3>
-                <p class="text-sm text-dark leading-relaxed mb-6">
-                    Valued in traditional herbal medicine and pharmaceutical formulations. Extracted from select betel leaves.
-                </p>
-                <div class="mt-auto pt-4 border-t border-border">
-                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
-                        Lihat Detail Produk
-                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
+            @empty
+            <div class="col-span-full text-center py-12">
+                <p class="text-dark/70">Belum ada produk unggulan.</p>
             </div>
-
-            {{-- Clove Oil --}}
-            <div class="product-card p-6 cursor-pointer reveal reveal-delay-2 flex flex-col">
-                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="{{ asset('images/products/product_clove.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Clove Oil">
-                </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Clove Oil</h3>
-                <p class="text-sm text-dark leading-relaxed mb-6">
-                    Essential for dental, cosmetic, and flavoring applications. Rich eugenol content from Central Java cloves.
-                </p>
-                <div class="mt-auto pt-4 border-t border-border">
-                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
-                        Lihat Detail Produk
-                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            {{-- Ginger Oil --}}
-            <div class="product-card p-6 cursor-pointer reveal reveal-delay-3 flex flex-col">
-                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="{{ asset('images/products/product_ginger.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Ginger Oil">
-                </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Ginger Oil</h3>
-                <p class="text-sm text-dark leading-relaxed mb-6">
-                    Popular in wellness, food manufacturing, and personal care. Warm, spicy profile from Java ginger roots.
-                </p>
-                <div class="mt-auto pt-4 border-t border-border">
-                    <a href="#products" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
-                        Lihat Detail Produk
-                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+            @endforelse
 
         </div>
 

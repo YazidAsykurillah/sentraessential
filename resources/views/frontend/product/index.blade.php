@@ -27,22 +27,26 @@
         
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            {{-- Product Item 1 --}}
+            @forelse($products as $product)
             <div class="product-card p-6 cursor-pointer reveal flex flex-col">
                 <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="https://placehold.co/800x600/e2e8f0/475569?text=Citronella+Oil" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Citronella Oil">
-                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-botanical shadow-sm border border-border">
-                        Best Seller
-                    </div>
+                    <img src="{{ $product->image ? asset('storage/' . $product->image) : 'https://placehold.co/800x600/e2e8f0/475569?text=' . urlencode($product->english_name) }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="{{ $product->english_name }}">
                 </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Citronella Oil</h3>
+                <div class="mb-2">
+                    <h3 class="font-heading text-lg font-bold text-dark mb-1">{{ $product->indonesian_name }}</h3>
+                    <span class="block text-sm font-medium text-dark/80">{{ $product->english_name }}</span>
+                </div>
+                @if($product->botanical_name)
+                <span class="block text-xs font-semibold text-dark/70 uppercase tracking-wider italic mb-4">({{ $product->botanical_name }})</span>
+                @else
+                <span class="block text-xs font-semibold text-transparent uppercase tracking-wider italic mb-4">-</span>
+                @endif
                 <p class="text-sm text-dark leading-relaxed mb-6">
-                    Minyak sereh wangi murni dengan aroma segar dan kuat. Cocok untuk industri pembersih, kosmetik, dan aromaterapi.
+                    {{ $product->short_description }}
                 </p>
-                <div class="mt-auto pt-4 border-t border-border flex items-center justify-between">
-                    <span class="text-xs font-semibold text-dark uppercase tracking-wider">Cymbopogon nardus</span>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
-                        Request
+                <div class="mt-auto pt-4 border-t border-border">
+                    <a href="{{ route('product.show', $product->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                        Lihat Detail Produk
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
@@ -50,48 +54,11 @@
                     </a>
                 </div>
             </div>
-
-            {{-- Product Item 2 --}}
-            <div class="product-card p-6 cursor-pointer reveal reveal-delay-1 flex flex-col">
-                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="https://placehold.co/800x600/e2e8f0/475569?text=Clove+Oil" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Clove Oil">
-                </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Clove Leaf Oil</h3>
-                <p class="text-sm text-dark leading-relaxed mb-6">
-                    Minyak daun cengkeh berkualitas tinggi yang diekstraksi secara presisi. Sangat ideal untuk industri farmasi dan kesehatan.
-                </p>
-                <div class="mt-auto pt-4 border-t border-border flex items-center justify-between">
-                    <span class="text-xs font-semibold text-dark uppercase tracking-wider">Syzygium aromaticum</span>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
-                        Request
-                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
+            @empty
+            <div class="col-span-full text-center py-12">
+                <p class="text-dark/70">Belum ada produk yang tersedia.</p>
             </div>
-
-            {{-- Product Item 3 --}}
-            <div class="product-card p-6 cursor-pointer reveal reveal-delay-2 flex flex-col">
-                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
-                    <img src="https://placehold.co/800x600/e2e8f0/475569?text=Patchouli+Oil" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Patchouli Oil">
-                </div>
-                <h3 class="font-heading text-lg font-bold text-dark mb-2">Patchouli Oil</h3>
-                <p class="text-sm text-dark leading-relaxed mb-6">
-                    Minyak nilam khas Indonesia dengan karakteristik aroma earthy yang kuat. Pilihan utama untuk industri parfum premium.
-                </p>
-                <div class="mt-auto pt-4 border-t border-border flex items-center justify-between">
-                    <span class="text-xs font-semibold text-dark uppercase tracking-wider">Pogostemon cablin</span>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
-                        Request
-                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+            @endforelse
 
         </div>
 

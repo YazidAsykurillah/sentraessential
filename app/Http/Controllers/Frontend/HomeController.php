@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\PageSeo;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -19,6 +20,12 @@ class HomeController extends Controller
             ->take(6)
             ->get();
 
-        return view('frontend.home.index', compact('posts', 'pageSeo'));
+        $featuredProducts = Product::where('status', 'published')
+            ->where('is_featured', true)
+            ->orderBy('indonesian_name')
+            ->take(4)
+            ->get();
+
+        return view('frontend.home.index', compact('posts', 'pageSeo', 'featuredProducts'));
     }
 }

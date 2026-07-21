@@ -9,22 +9,22 @@
     {{-- Background pattern overlay --}}
     <div class="absolute inset-0 hero-pattern"></div>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-16">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             
             {{-- Left Column: Content --}}
-            <div class="max-w-2xl reveal">
+            <div class="max-w-2xl lg:col-span-7 reveal">
                 {{-- Badge --}}
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
                     <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
                     <span class="text-xs font-medium text-white/80 tracking-wide uppercase">Your Trusted Supplier of Essential Oils</span>
                 </div>
 
-                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-6">
-                    Supplier Minyak Atsiri Untuk <span class="text-botanical-light">Industri Manufaktur & Exportir Indonesia</span>
+                <h1 class="font-heading text-5xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+                    Supplier Minyak Atsiri <span class="text-botanical-light">Untuk Manufaktur & Exportir</span>
                 </h1>
 
-                <p class="text-lg md:text-lg text-white/70 leading-relaxed mb-10 max-w-xl">
+                <p class="text-base md:text-base text-white/60 leading-relaxed mb-10 max-w-xl">
                     Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, personal care dan perusahaan exportir Indonesia.
                 </p>
 
@@ -47,7 +47,7 @@
             </div>
 
             {{-- Right Column: Image --}}
-            <div class="relative hidden lg:block reveal reveal-delay-2">
+            <div class="relative hidden lg:block lg:col-span-5 reveal reveal-delay-2">
                 {{-- Decorative background blob/border --}}
                 <div class="absolute -inset-4 bg-white/5 rounded-[2rem] transform rotate-3"></div>
                 
@@ -150,8 +150,8 @@
                 <p class="text-base text-dark leading-relaxed mb-8">
                     Melalui pengelolaan <i>supply chain</i> yang terintegrasi dengan sentra penyulingan di berbagai daerah, kami mampu mengamankan ketersediaan produk secara berkelanjutan demi menjaga kontinuitas produksi mitra bisnis kami.
                 </p>
-                <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all duration-200 cursor-pointer">
-                    Learn more about us
+                <a href="{{ route('about') }}" class="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all duration-200 cursor-pointer">
+                    Selengkapnya Tentang Kami
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
@@ -248,13 +248,8 @@
 
             {{-- Citronella Oil --}}
             <div class="product-card p-6 cursor-pointer reveal flex flex-col">
-                <div class="w-16 h-16 mb-5 rounded-2xl bg-botanical-muted flex items-center justify-center">
-                    <svg class="w-8 h-8 text-botanical" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M24 44V20" stroke-linecap="round"/>
-                        <path d="M24 20C24 20 16 12 16 8C16 4 20 2 24 6C28 2 32 4 32 8C32 12 24 20 24 20Z" fill="currentColor" fill-opacity="0.1"/>
-                        <path d="M24 28C20 28 14 24 14 18" stroke-linecap="round"/>
-                        <path d="M24 32C28 32 34 28 34 22" stroke-linecap="round"/>
-                    </svg>
+                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
+                    <img src="{{ asset('images/products/product_citronella.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Citronella Oil">
                 </div>
                 <h3 class="font-heading text-lg font-bold text-dark mb-2">Citronella Oil</h3>
                 <p class="text-sm text-dark leading-relaxed mb-6">
@@ -273,12 +268,8 @@
 
             {{-- Betel Leaf Oil --}}
             <div class="product-card p-6 cursor-pointer reveal reveal-delay-1 flex flex-col">
-                <div class="w-16 h-16 mb-5 rounded-2xl bg-botanical-muted flex items-center justify-center">
-                    <svg class="w-8 h-8 text-botanical" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M24 44V24" stroke-linecap="round"/>
-                        <path d="M12 8C12 8 24 4 36 8C36 8 38 20 30 28C22 36 12 32 12 32C12 32 8 20 12 8Z" fill="currentColor" fill-opacity="0.1"/>
-                        <path d="M18 16C22 18 26 22 28 28" stroke-linecap="round"/>
-                    </svg>
+                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
+                    <img src="{{ asset('images/products/product_betel_leaf.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Betel Leaf Oil">
                 </div>
                 <h3 class="font-heading text-lg font-bold text-dark mb-2">Betel Leaf Oil</h3>
                 <p class="text-sm text-dark leading-relaxed mb-6">
@@ -297,15 +288,8 @@
 
             {{-- Clove Oil --}}
             <div class="product-card p-6 cursor-pointer reveal reveal-delay-2 flex flex-col">
-                <div class="w-16 h-16 mb-5 rounded-2xl bg-amber-50 flex items-center justify-center">
-                    <svg class="w-8 h-8 text-amber-700" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M24 44V28" stroke-linecap="round"/>
-                        <circle cx="24" cy="18" r="10" fill="currentColor" fill-opacity="0.1"/>
-                        <path d="M24 8V4" stroke-linecap="round"/>
-                        <path d="M20 10L18 6" stroke-linecap="round"/>
-                        <path d="M28 10L30 6" stroke-linecap="round"/>
-                        <circle cx="24" cy="18" r="5"/>
-                    </svg>
+                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
+                    <img src="{{ asset('images/products/product_clove.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Clove Oil">
                 </div>
                 <h3 class="font-heading text-lg font-bold text-dark mb-2">Clove Oil</h3>
                 <p class="text-sm text-dark leading-relaxed mb-6">
@@ -324,12 +308,8 @@
 
             {{-- Ginger Oil --}}
             <div class="product-card p-6 cursor-pointer reveal reveal-delay-3 flex flex-col">
-                <div class="w-16 h-16 mb-5 rounded-2xl bg-orange-50 flex items-center justify-center">
-                    <svg class="w-8 h-8 text-orange-600" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M24 44V30" stroke-linecap="round"/>
-                        <path d="M16 22C16 22 14 14 20 10C26 6 28 10 28 10C28 10 32 6 36 12C40 18 34 24 28 24C22 24 20 26 20 30" fill="currentColor" fill-opacity="0.1"/>
-                        <path d="M16 22C16 22 14 14 20 10C26 6 28 10 28 10C28 10 32 6 36 12C40 18 34 24 28 24" stroke-linecap="round"/>
-                    </svg>
+                <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
+                    <img src="{{ asset('images/products/product_ginger.webp') }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="Ginger Oil">
                 </div>
                 <h3 class="font-heading text-lg font-bold text-dark mb-2">Ginger Oil</h3>
                 <p class="text-sm text-dark leading-relaxed mb-6">
@@ -389,7 +369,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Physical Filtration & QC</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Setiap batch minyak atsiri kami menjalani proses filtrasi fisik dan quality control yang terstandarisasi untuk menjamin 100% kemurnian.
+                    Kami selalu melakukan proses filtrasi fisik dan quality control yang terstandar untuk menjamin 100% kemurnian.
                 </p>
             </div>
 
@@ -419,7 +399,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Complete Documentation</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Dokumentasi perdagangan domestik lengkap termasuk Faktur Pajak dan penerbitan PKP untuk transaksi yang lancar.
+                    Dokumen yang lengkap termasuk faktur pajak dan penerbitan PKP untuk transaksi yang aman.
                 </p>
             </div>
 
@@ -447,7 +427,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Industrial-Scale Fulfillment</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Mampu memenuhi pesanan volume besar untuk produsen dan kebutuhan ekspor volume stabil.
+                    Mampu memenuhi pesanan volume besar untuk produsen dan kebutuhan volume yang stabil untuk ekspor.
                 </p>
             </div>
 

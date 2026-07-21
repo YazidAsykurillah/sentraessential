@@ -65,7 +65,7 @@
             <div class="relative reveal">
                 <div class="absolute -inset-4 bg-botanical-muted rounded-[2rem] transform -rotate-2"></div>
                 <div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] border border-border">
-                    <img src="{{ asset('images/hero_section_1.webp') }}" alt="Distillation Process" class="w-full h-full object-cover">
+                    <img src="{{ asset('images/kebun-sereh-wangi.jpg') }}" alt="Local Farming Process" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-dark/10"></div>
                 </div>
                 
@@ -99,8 +99,7 @@
                     serta menjadi vendor pasokan volume stabil bagi perusahaan eksportir minyak atsiri di Indonesia.
                 </p>
                 <p class="text-base text-dark leading-relaxed mb-4">
-                    Kami memahami bahwa dalam industri manufaktur, baik itu farmasi, 
-                    kosmetik, maupun personal care; konsistensi kualitas dan kestabilan pasokan
+                    Kami memahami bahwa dalam industri manufaktur, konsistensi kualitas dan kestabilan pasokan
                     adalah nyawa dari sebuah produksi. Oleh karena itu, kami membangun kemitraan langsung
                     dengan para penyuling lokal di berbagai sentra penghasil atsiri di seluruh Indonesia.
                 </p>
@@ -153,7 +152,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-3">Kontinuitas Pasokan</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Melalui jaringan terintegrasi, kami mampu menjaga kestabilan volume pasokan untuk memenuhi target produksi industri Anda secara konsiten.
+                    Melalui jaringan terintegrasi, kami mampu menjaga kestabilan volume pasokan untuk memenuhi target produksi industri Anda secara konsisten.
                 </p>
             </div>
 

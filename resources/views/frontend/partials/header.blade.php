@@ -24,7 +24,7 @@
                 <a href="{{ route('about') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
                     Tentang Kami
                 </a>
-                <a href="#" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('products.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
                     Produk
                 </a>
                 <a href="{{ route('blog.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
@@ -61,6 +61,12 @@
             <div class="py-4 space-y-1 border-t border-border">
                 <a href="{{ route('home') }}" class="block px-4 py-2.5 text-sm font-medium text-dark hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Home
+                </a>
+                <a href="{{ route('about') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                    Tentang Kami
+                </a>
+                <a href="{{ route('products.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                    Produk
                 </a>
                 <a href="{{ route('blog.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Blog

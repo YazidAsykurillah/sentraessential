@@ -40,7 +40,19 @@ class ProductForm
                     ->image()
                     ->maxSize(2048)
                     ->disk('public')
-                    ->directory('products'),
+                    ->directory('products')
+                    ->saveUploadedFileUsing(function (\Livewire\Features\SupportFileUploads\TemporaryUploadedFile $file): string {
+                        $filename = Str::uuid() . '.webp';
+                        $path = 'products/' . $filename;
+
+                        $manager = new \Intervention\Image\ImageManager(new \Intervention\Image\Drivers\Gd\Driver());
+                        $image = $manager->read($file->getRealPath());
+                        $encoded = $image->toWebp(90);
+
+                        \Illuminate\Support\Facades\Storage::disk('public')->put($path, (string) $encoded);
+
+                        return $path;
+                    }),
                 Select::make('status')
                     ->options([
                         'draft' => 'Draft',

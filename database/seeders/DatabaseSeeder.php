@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             WebsiteSettingSeeder::class,
             PageSeoSeeder::class,
             ContactMessagesSeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }

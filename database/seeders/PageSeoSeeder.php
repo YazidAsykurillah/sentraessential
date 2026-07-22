@@ -18,6 +18,8 @@ class PageSeoSeeder extends Seeder
             [
                 'page_name' => 'Home',
                 'slug' => '/',
+                'seo_title' => 'Sentra Essential - Supplier Minyak Atsiri (Essential Oil) Untuk Manufaktur dan Eksportir',
+                'seo_description' => 'Sentra Essential adalah Supplier Minyak Atsiri (Essential Oil) dengan kualitas terbaik untuk kebutuhan manufaktur dan eksportir. Dapatkan harga terjangkau dan pengiriman cepat ke seluruh Indonesia.',
                 'is_active' => true,
             ]
         );
@@ -27,6 +29,8 @@ class PageSeoSeeder extends Seeder
             [
                 'page_name' => 'About',
                 'slug' => 'about',
+                'seo_title' => 'About - Sentra Essential',
+                'seo_description' => 'Tentang Sentra Essential. Supplier Minyak Atsiri (Essential Oil) dengan kualitas terbaik untuk kebutuhan manufaktur dan eksportir.',
                 'is_active' => true,
             ]
         );
@@ -36,6 +40,8 @@ class PageSeoSeeder extends Seeder
             [
                 'page_name' => 'Products',
                 'slug' => 'products',
+                'seo_title' => 'Products - Sentra Essential',
+                'seo_description' => 'Jual Minyak Atsiri (Essential Oil) berkualitas tinggi untuk kebutuhan manufaktur dan eksportir. Kami menyediakan berbagai jenis minyak atsiri untuk kebutuhan manufaktur dan eksportir.',
                 'is_active' => true,
             ]
         );
@@ -45,6 +51,8 @@ class PageSeoSeeder extends Seeder
             [
                 'page_name' => 'Contact',
                 'slug' => 'contact',
+                'seo_title' => 'Kontak - Sentra Essential',
+                'seo_description' => 'Hubungi Sentra Essential untuk kebutuhan Minyak Atsiri (Essential Oil) Anda. Kami adalah Supplier Minyak Atsiri dengan kualitas terbaik untuk kebutuhan manufaktur dan eksportir.',
                 'is_active' => true,
             ]
         );

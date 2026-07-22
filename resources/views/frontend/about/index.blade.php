@@ -186,7 +186,7 @@
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-8">
                     Keunggulan Integrasi Hulu Kami
                 </h2>
-                <p class="text-lg text-dark mb-6 leading-relaxed">
+                <p class="text-base text-dark mb-6 leading-relaxed">
                     Sentra Essential Oil memiliki keunggulan kompetitif dalam penguasaan rantai pasok dari hulu. Kami bukan sekadar <i>trader</i>, melainkan bagian dari ekosistem penyulingan itu sendiri.
                 </p>
                 <ul class="space-y-4 text-dark">

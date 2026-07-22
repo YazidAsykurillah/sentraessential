@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $pageSeo = PageSeo::where('page_key', 'product')->where('is_active', true)->first();
+        $pageSeo = PageSeo::where('page_key', 'products')->where('is_active', true)->first();
         $products = Product::where('status', 'published')->orderBy('indonesian_name')->get();
         return view('frontend.product.index', compact('pageSeo', 'products'));
     }

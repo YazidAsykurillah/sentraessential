@@ -282,7 +282,7 @@
         </div>
 
         <div class="mt-14 text-center reveal">
-            <a href="#products" class="btn-primary group">
+            <a href="{{route('products.index')}}" class="btn-primary group">
                 Lihat Semua Produk
                 <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>

@@ -106,7 +106,7 @@
 <section class="bg-light py-16 md:py-24 border-t border-border/50">
     <div class="max-w-4xl mx-auto px-6 lg:px-8">
         <h2 class="font-heading text-2xl md:text-3xl font-bold text-dark mb-8 pb-4 border-b border-border/50">Deskripsi Lengkap</h2>
-        <div class="prose prose-lg prose-dark prose-headings:font-heading prose-headings:font-bold prose-a:text-accent prose-img:rounded-2xl max-w-none">
+        <div class="prose prose-sm prose-dark prose-headings:font-heading prose-headings:font-bold prose-a:text-accent prose-img:rounded-2xl max-w-none">
             {!! $product->description !!}
         </div>
     </div>

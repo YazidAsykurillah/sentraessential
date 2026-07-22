@@ -60,6 +60,11 @@ class ProductForm
                     ])
                     ->default('published')
                     ->required(),
+                TextInput::make('price')
+                    ->numeric()
+                    ->prefix('Rp'),
+                TextInput::make('price_unit')
+                    ->placeholder('e.g., Kg, L, Pcs'),
                 Toggle::make('is_featured'),
                 TextInput::make('meta_title'),
                 Textarea::make('meta_description')

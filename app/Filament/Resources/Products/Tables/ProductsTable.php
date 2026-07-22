@@ -25,6 +25,10 @@ class ProductsTable
                     ->searchable(),
                 TextColumn::make('botanical_name')
                     ->searchable(),
+                TextColumn::make('price')
+                    ->money('IDR')
+                    ->sortable(),
+                TextColumn::make('price_unit'),
                 IconColumn::make('is_featured')
                     ->boolean(),
                 TextColumn::make('status')

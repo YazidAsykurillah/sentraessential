@@ -19,6 +19,8 @@ class ProductSeeder extends Seeder
                 'description' => '<p>Minyak Daun Cengkeh kami diekstrak dari daun cengkeh pilihan. Mengandung Eugenol yang tinggi yang sangat berguna dalam bidang farmasi dan kesehatan sebagai analgesik dan antibakteri alami.</p>',
                 'is_featured' => true,
                 'status' => 'published',
+                'price' => 250000,
+                'price_unit' => 'Kg',
             ],
             [
                 'indonesian_name' => 'Minyak Atsiri Bunga Cengkeh',
@@ -28,6 +30,8 @@ class ProductSeeder extends Seeder
                 'description' => '<p>Minyak Bunga Cengkeh diekstrak langsung dari kuncup bunga cengkeh pilihan. Aromanya lebih halus, manis, dan kaya dibandingkan minyak daun cengkeh, menjadikannya pilihan favorit untuk aromaterapi, perawatan gigi, dan parfum berkualitas tinggi.</p>',
                 'is_featured' => true,
                 'status' => 'published',
+                'price' => 450000,
+                'price_unit' => 'Kg',
             ],
             [
                 'indonesian_name' => 'Minyak Atsiri Jahe',
@@ -37,6 +41,8 @@ class ProductSeeder extends Seeder
                 'description' => '<p>Minyak Jahe diekstrak melalui proses destilasi uap rimpang jahe segar. Banyak dimanfaatkan pada industri makanan, minuman, serta kesehatan karena aromanya yang khas dan manfaat terapetiknya.</p>',
                 'is_featured' => true,
                 'status' => 'published',
+                'price' => 300000,
+                'price_unit' => 'Kg',
             ],
             [
                 'indonesian_name' => 'Minyak Atsiri Daun Sirih',
@@ -46,6 +52,8 @@ class ProductSeeder extends Seeder
                 'description' => '<p>Minyak Daun Sirih dihasilkan melalui proses distilasi daun sirih segar. Dikenal memiliki sifat antibakteri dan antijamur yang sangat kuat, minyak ini sering digunakan dalam formulasi sabun, pasta gigi, dan produk antiseptik alami.</p>',
                 'is_featured' => true,
                 'status' => 'published',
+                'price' => 500000,
+                'price_unit' => 'L',
             ],
             [
                 'indonesian_name' => 'Minyak Atsiri Sereh Wangi',
@@ -55,6 +63,8 @@ class ProductSeeder extends Seeder
                 'description' => '<p>Minyak Sereh Wangi (Citronella Oil) adalah salah satu jenis minyak atsiri yang paling banyak digunakan di seluruh dunia. Dikenal karena sifat anti-serangga alami dan aromanya yang menyegarkan.</p>',
                 'is_featured' => true,
                 'status' => 'published',
+                'price' => 150000,
+                'price_unit' => 'L',
             ],
         ];
 
@@ -69,6 +79,8 @@ class ProductSeeder extends Seeder
                     'description' => $product['description'],
                     'is_featured' => $product['is_featured'],
                     'status' => $product['status'],
+                    'price' => $product['price'],
+                    'price_unit' => $product['price_unit'],
                     'meta_title' => $product['indonesian_name'] . ' | Sentra Essential',
                     'meta_description' => $product['short_description'],
                 ]

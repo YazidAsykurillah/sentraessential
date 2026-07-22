@@ -247,7 +247,7 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             @forelse($featuredProducts as $product)
-            <div class="product-card p-6 cursor-pointer reveal flex flex-col">
+            <div class="product-card p-6 cursor-pointer reveal flex flex-col relative">
                 <div class="relative w-full aspect-square mb-5 rounded-2xl overflow-hidden bg-surface group">
                     <img src="{{ $product->image ? asset('storage/' . $product->image) : 'https://placehold.co/800x600/e2e8f0/475569?text=' . urlencode($product->english_name) }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="{{ $product->english_name }}">
                 </div>
@@ -260,11 +260,20 @@
                 @else
                 <span class="block text-xs font-semibold text-transparent uppercase tracking-wider italic mb-4">-</span>
                 @endif
+
+                @if($product->price)
+                <div class="mb-4">
+                    <span class="text-lg font-bold text-accent">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
+                    @if($product->price_unit)
+                    <span class="text-xs text-dark/60 font-medium">/ {{ $product->price_unit }}</span>
+                    @endif
+                </div>
+                @endif
                 <p class="text-sm text-dark leading-relaxed mb-6">
                     {{ $product->short_description }}
                 </p>
                 <div class="mt-auto pt-4 border-t border-border">
-                    <a href="{{ route('product.show', $product->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group">
+                    <a href="{{ route('product.show', $product->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group before:absolute before:inset-0 before:z-10">
                         Lihat Detail Produk
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>

@@ -62,6 +62,13 @@ class PostForm
                     ->required()
                     ->columnSpanFull(),
                 DateTimePicker::make('published_at'),
+                TextInput::make('meta_title')
+                    ->maxLength(255)
+                    ->label('Meta Title'),
+                Textarea::make('meta_description')
+                    ->rows(3)
+                    ->columnSpanFull()
+                    ->label('Meta Description'),
             ]);
     }
 

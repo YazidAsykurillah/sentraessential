@@ -66,13 +66,23 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{ route('about') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
+                            Tentang Kami
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('products.index') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
+                            Produk
+                        </a>
+                    </li>
+                    <li>
                         <a href="{{ route('blogs.index') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
                             Blog
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('contact') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Contact
+                            Kontak
                         </a>
                     </li>
                 </ul>
@@ -115,9 +125,11 @@
                 <p class="text-xs text-white/40">
                     &copy; {{ date('Y') }} {{ setting('company_name') }}. All rights reserved.
                 </p>
-                <p class="text-xs text-white/40">
-                    Semarang, Central Java — Indonesia
-                </p>
+                <div class="flex items-center gap-4 text-xs text-white/40">
+                    <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors duration-200">Cookie Policy</a>
+                </div>
             </div>
         </div>
     </div>

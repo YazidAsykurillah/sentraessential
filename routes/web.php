@@ -14,3 +14,4 @@ Route::get('/products/{product:slug}', [ProductController::class, 'show'])->name
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{post:slug}', [BlogController::class, 'show'])->name('blogs.show');
 Route::get('/contact', [ContactMessageController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');

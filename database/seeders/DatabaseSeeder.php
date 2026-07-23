@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             SuperAdminSeeder::class,
             CategoriesSeeder::class,
             TagsSeeder::class,
+            PostsSeeder::class,
             WebsiteSettingSeeder::class,
             PageSeoSeeder::class,
             ContactMessagesSeeder::class,

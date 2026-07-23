@@ -11,6 +11,7 @@ use Filament\Schemas\Schema;
 use App\Models\Category;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\RichEditor;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -62,13 +63,18 @@ class PostForm
                     ->required()
                     ->columnSpanFull(),
                 DateTimePicker::make('published_at'),
-                TextInput::make('meta_title')
-                    ->maxLength(255)
-                    ->label('Meta Title'),
-                Textarea::make('meta_description')
-                    ->rows(3)
-                    ->columnSpanFull()
-                    ->label('Meta Description'),
+                Section::make('SEO')
+                    ->description('Search Engine Optimization settings')
+                    ->schema([
+                        TextInput::make('meta_title')
+                            ->maxLength(255)
+                            ->label('Meta Title'),
+                        Textarea::make('meta_description')
+                            ->rows(3)
+                            ->columnSpanFull()
+                            ->label('Meta Description'),
+                    ])
+                    ->collapsible(),
             ]);
     }
 

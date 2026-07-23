@@ -14,8 +14,10 @@ class CategoriesSeeder extends Seeder
     public function run(): void
     {
        $categories = [
-            ['name' => 'Category 1', 'slug' => 'category-1', 'description' => 'Category 1 description'],
-            ['name' => 'Category 2', 'slug' => 'category-2', 'description' => 'Category 2 description'],
+            ['name' => 'Minyak Atsiri Murni', 'slug' => 'minyak-atsiri-murni', 'description' => 'Minyak atsiri murni untuk berbagai kebutuhan industri.'],
+            ['name' => 'Bahan Baku Kosmetik', 'slug' => 'bahan-baku-kosmetik', 'description' => 'Bahan baku berkualitas untuk produk kosmetik dan perawatan kulit.'],
+            ['name' => 'Bahan Baku Farmasi', 'slug' => 'bahan-baku-farmasi', 'description' => 'Ekstrak alami terstandar untuk industri farmasi dan kesehatan.'],
+            ['name' => 'Aromaterapi & Spa', 'slug' => 'aromaterapi-spa', 'description' => 'Produk minyak esensial pilihan untuk kebutuhan relaksasi dan spa.'],
         ];
 
         foreach ($categories as $index => $category) {

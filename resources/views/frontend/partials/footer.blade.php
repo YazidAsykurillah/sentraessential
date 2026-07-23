@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('blog.index') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
+                        <a href="{{ route('blogs.index') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
                             Blog
                         </a>
                     </li>

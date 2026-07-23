@@ -27,7 +27,7 @@
                 <a href="{{ route('products.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
                     Produk
                 </a>
-                <a href="{{ route('blog.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('blogs.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
                     Blog
                 </a>
                 <a href="{{ route('contact') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
@@ -68,7 +68,7 @@
                 <a href="{{ route('products.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Produk
                 </a>
-                <a href="{{ route('blog.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('blogs.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Blog
                 </a>
                 <a href="{{ route('contact') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">

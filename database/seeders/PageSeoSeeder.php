@@ -47,6 +47,17 @@ class PageSeoSeeder extends Seeder
         );
 
         PageSeo::updateOrCreate(
+            ['page_key' => 'blogs'],
+            [
+                'page_name' => 'Blogs',
+                'slug' => 'blogs',
+                'seo_title' => 'Blog - Sentra Essential',
+                'seo_description' => 'Informasi dan wawasan seputar minyak atsiri (essential oil), bisnis rempah, dan inovasi industri.',
+                'is_active' => true,
+            ]
+        );
+
+        PageSeo::updateOrCreate(
             ['page_key' => 'contact'],
             [
                 'page_name' => 'Contact',

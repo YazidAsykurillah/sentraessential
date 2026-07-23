@@ -14,8 +14,11 @@ class TagsSeeder extends Seeder
     public function run(): void
     {
         $tags = [
-            ['name' => 'tag one'],
-            ['name' => 'tag two'],
+            ['name' => 'Ekstraksi'],
+            ['name' => 'Distilasi'],
+            ['name' => 'Kualitas Ekspor'],
+            ['name' => 'Organik'],
+            ['name' => 'Manufaktur'],
         ];
 
         foreach ($tags as $index => $tag) {

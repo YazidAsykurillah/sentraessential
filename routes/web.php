@@ -15,3 +15,8 @@ Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{post:slug}', [BlogController::class, 'show'])->name('blogs.show');
 Route::get('/contact', [ContactMessageController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');
+
+Route::get('/robots.txt', function () {
+    $content = "User-agent: *\nDisallow:\n\nSitemap: " . url('/sitemap.xml') . "\n";
+    return response($content)->header('Content-Type', 'text/plain');
+});

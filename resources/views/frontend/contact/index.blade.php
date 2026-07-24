@@ -8,10 +8,10 @@
 <section class="bg-surface relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-20">
     <div class="absolute inset-0 bg-gradient-to-br from-botanical/10 to-transparent"></div>
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative text-center">
-        <h1 class="font-heading text-4xl md:text-5xl font-bold text-dark leading-tight tracking-tight mb-4">
+        <h1 class="font-heading text-5xl md:text-5xl lg:text-6xl font-bold text-black leading-[1.1] tracking-tight mb-6">
             Hubungi <span class="text-accent">Kami</span>
         </h1>
-        <p class="text-base md:text-lg text-dark/70 max-w-2xl mx-auto">
+        <p class="text-base md:text-base text-dark/70 max-w-2xl mx-auto">
             Tim kami siap membantu Anda dengan informasi produk, pengadaan bahan baku, atau pertanyaan kerja sama.
         </p>
     </div>

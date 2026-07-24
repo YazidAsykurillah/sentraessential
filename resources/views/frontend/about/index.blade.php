@@ -18,7 +18,7 @@
                     <span class="text-xs font-medium text-white/80 tracking-wide uppercase">About Sentra Essential</span>
                 </div>
 
-                <h1 class="font-heading text-5xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+                <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight mb-6">
                     Mitra Strategis <br class="hidden md:block"> <span class="text-botanical-light">Kebutuhan Minyak Atsiri Anda</span>
                 </h1>
 
@@ -65,7 +65,7 @@
             <div class="relative reveal">
                 <div class="absolute -inset-4 bg-botanical-muted rounded-[2rem] transform -rotate-2"></div>
                 <div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] border border-border">
-                    <img src="{{ asset('images/kebun-sereh-wangi.jpg') }}" alt="Local Farming Process" class="w-full h-full object-cover">
+                    <img src="{{ asset('images/our_story_farm.png') }}" alt="Local Farming Process" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-dark/10"></div>
                 </div>
                 

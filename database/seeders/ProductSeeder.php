@@ -70,7 +70,7 @@ class ProductSeeder extends Seeder
 
         foreach ($products as $product) {
             Product::updateOrCreate(
-                ['slug' => Str::slug($product['indonesian_name'])],
+                ['slug' => Str::slug($product['indonesian_name']).'-'.Str::slug($product['english_name'])],
                 [
                     'indonesian_name' => $product['indonesian_name'],
                     'english_name' => $product['english_name'],

@@ -12,7 +12,7 @@ class ProductSeeder extends Seeder
     {
         $products = [
             [
-                'indonesian_name' => 'Minyak Atsiri Daun Cengkeh',
+                'indonesian_name' => 'Minyak Atsiri Cengkeh (Daun)',
                 'english_name' => 'Clove Leaf Essential Oil',
                 'botanical_name' => 'Syzygium aromaticum',
                 'short_description' => 'Minyak daun cengkeh berkualitas tinggi yang diekstraksi secara presisi. Sangat ideal untuk industri farmasi dan kesehatan.',
@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
                 'price_unit' => 'Kg',
             ],
             [
-                'indonesian_name' => 'Minyak Atsiri Bunga Cengkeh',
+                'indonesian_name' => 'Minyak Atsiri Cengkeh (Bunga)',
                 'english_name' => 'Clove Bud Essential Oil',
                 'botanical_name' => 'Syzygium aromaticum',
                 'short_description' => 'Minyak bunga cengkeh murni dengan aroma khas yang manis dan pedas. Sering digunakan pada parfum dan aromaterapi.',

@@ -24,7 +24,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'indonesian_name' => 'Minyak Atsiri Bunga Cengkeh',
-                'english_name' => 'Clove Bud EssentialOil',
+                'english_name' => 'Clove Bud Essential Oil',
                 'botanical_name' => 'Syzygium aromaticum',
                 'short_description' => 'Minyak bunga cengkeh murni dengan aroma khas yang manis dan pedas. Sering digunakan pada parfum dan aromaterapi.',
                 'description' => '<p>Minyak Bunga Cengkeh diekstrak langsung dari kuncup bunga cengkeh pilihan. Aromanya lebih halus, manis, dan kaya dibandingkan minyak daun cengkeh, menjadikannya pilihan favorit untuk aromaterapi, perawatan gigi, dan parfum berkualitas tinggi.</p>',

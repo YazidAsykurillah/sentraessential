@@ -18,19 +18,19 @@
 
             {{-- Desktop Navigation --}}
             <nav class="hidden md:flex items-center gap-8">
-                <a href="{{ route('home') }}" class="text-sm font-medium text-dark hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('home') }}" class="text-sm font-medium {{ request()->routeIs('home') ? 'text-accent' : 'text-secondary' }} hover:text-accent transition-colors duration-200 cursor-pointer">
                     Home
                 </a>
-                <a href="{{ route('about') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('about') }}" class="text-sm font-medium {{ request()->routeIs('about') ? 'text-accent' : 'text-secondary' }} hover:text-accent transition-colors duration-200 cursor-pointer">
                     Tentang Kami
                 </a>
-                <a href="{{ route('products.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('products.index') }}" class="text-sm font-medium {{ request()->routeIs('products.*') ? 'text-accent' : 'text-secondary' }} hover:text-accent transition-colors duration-200 cursor-pointer">
                     Produk
                 </a>
-                <a href="{{ route('blogs.index') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('blogs.index') }}" class="text-sm font-medium {{ request()->routeIs('blogs.*') ? 'text-accent' : 'text-secondary' }} hover:text-accent transition-colors duration-200 cursor-pointer">
                     Blog
                 </a>
-                <a href="{{ route('contact') }}" class="text-sm font-medium text-secondary hover:text-accent transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('contact') }}" class="text-sm font-medium {{ request()->routeIs('contact') ? 'text-accent' : 'text-secondary' }} hover:text-accent transition-colors duration-200 cursor-pointer">
                     Kontak
                 </a>
                 <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent-light transition-colors duration-200 cursor-pointer">
@@ -59,19 +59,19 @@
         {{-- Mobile Menu --}}
         <div id="mobile-menu" class="mobile-menu md:hidden">
             <div class="py-4 space-y-1 border-t border-border">
-                <a href="{{ route('home') }}" class="block px-4 py-2.5 text-sm font-medium text-dark hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('home') }}" class="block px-4 py-2.5 text-sm font-medium {{ request()->routeIs('home') ? 'text-accent bg-surface-alt' : 'text-secondary' }} hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Home
                 </a>
-                <a href="{{ route('about') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('about') }}" class="block px-4 py-2.5 text-sm font-medium {{ request()->routeIs('about') ? 'text-accent bg-surface-alt' : 'text-secondary' }} hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Tentang Kami
                 </a>
-                <a href="{{ route('products.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('products.index') }}" class="block px-4 py-2.5 text-sm font-medium {{ request()->routeIs('products.*') ? 'text-accent bg-surface-alt' : 'text-secondary' }} hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Produk
                 </a>
-                <a href="{{ route('blogs.index') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('blogs.index') }}" class="block px-4 py-2.5 text-sm font-medium {{ request()->routeIs('blogs.*') ? 'text-accent bg-surface-alt' : 'text-secondary' }} hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Blog
                 </a>
-                <a href="{{ route('contact') }}" class="block px-4 py-2.5 text-sm font-medium text-secondary hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
+                <a href="{{ route('contact') }}" class="block px-4 py-2.5 text-sm font-medium {{ request()->routeIs('contact') ? 'text-accent bg-surface-alt' : 'text-secondary' }} hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
                     Kontak
                 </a>
                 <div class="pt-2">

@@ -29,7 +29,7 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#featured-products" class="btn-primary">
+                    <a href="{{route('products.index')}}" class="btn-primary">
                         Lihat Produk Kami
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"/>
@@ -47,20 +47,18 @@
             </div>
 
             {{-- Right Column: Image --}}
-            <div class="relative hidden lg:block lg:col-span-5 reveal reveal-delay-2">
+            <div class="relative lg:col-span-5 reveal reveal-delay-2">
                 {{-- Decorative background blob/border --}}
                 <div class="absolute -inset-4 bg-white/5 rounded-[2rem] transform rotate-3"></div>
                 
                 {{-- Main Image --}}
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3] group">
-                    <img src="{{ asset('images/hero_section_1.webp') }}" 
-                         alt="Bulk Essential Oils Ready for Export" 
+                    <img src="{{ asset('images/home_bulk_oils.webp') }}" 
+                         alt="Supplier minyak atsiri Indonesia" 
                          class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                     
                     {{-- Overlay gradient for premium feel --}}
                     <div class="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent"></div>
-                    
-
                 </div>
             </div>
 

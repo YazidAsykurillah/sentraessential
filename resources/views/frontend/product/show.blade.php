@@ -94,7 +94,7 @@
 
                 {{-- CTA --}}
                 <div class="mt-auto bg-surface p-6 rounded-2xl border border-border/50">
-                    <h3 class="font-heading text-base md:text-lg lg:text-xl font-bold text-dark mb-2">Pesan Untuk Industri</h3>
+                    <h3 class="font-heading text-base md:text-lg lg:text-xl font-bold text-dark mb-2">Pesan Produk Ini</h3>
                     <p class="text-sm text-dark/70 mb-5">Dapatkan penawaran khusus untuk pembelian skala besar atau rutin.</p>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a href="{{ route('contact') }}" class="btn-primary w-full sm:w-auto text-center justify-center">

@@ -16,11 +16,11 @@ class SuperAdminSeeder extends Seeder
     {
         $user = User::firstOrCreate(
             [
-                'email' => 'superadmin@cms.local',
+                'email' => env('SUPER_ADMIN_EMAIL', 'superadmin@cms.local'),
             ],
             [
-                'name' => 'Super Admin',
-                'password' => Hash::make('password'),
+                'name' => env('SUPER_ADMIN_NAME', 'Super Admin'),
+                'password' => Hash::make(env('SUPER_ADMIN_PASSWORD', 'password')),
                 'email_verified_at' => now(),
             ]
         );

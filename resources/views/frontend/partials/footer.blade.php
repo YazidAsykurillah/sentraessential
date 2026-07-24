@@ -4,10 +4,10 @@
     <div class="botanical-line"></div>
 
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
 
             {{-- Company Info --}}
-            <div class="lg:col-span-1">
+            <div>
                 <div class="flex items-center gap-2.5 mb-4">
                     @if(setting('logo'))
                         <img src="{{ Storage::disk('public')->url(setting('logo')) }}" alt="{{ setting('company_name') }}" class="h-8 w-auto object-contain rounded-md">
@@ -23,35 +23,6 @@
                 <p class="text-sm text-white/60 leading-relaxed">
                     {{ setting('site_tagline') }}
                 </p>
-            </div>
-
-            {{-- Products --}}
-            <div>
-                <h4 class="text-sm font-semibold uppercase tracking-wider text-white/80 mb-4">
-                    Our Products
-                </h4>
-                <ul class="space-y-2.5">
-                    <li>
-                        <span class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Citronella Oil
-                        </span>
-                    </li>
-                    <li>
-                        <span class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Betel Leaf Oil
-                        </span>
-                    </li>
-                    <li>
-                        <span class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Clove Oil
-                        </span>
-                    </li>
-                    <li>
-                        <span class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Ginger Oil
-                        </span>
-                    </li>
-                </ul>
             </div>
 
             {{-- Quick Links --}}

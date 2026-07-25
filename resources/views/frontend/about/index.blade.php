@@ -47,7 +47,7 @@
                 
                 {{-- Main Image --}}
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3] group">
-                    <img src="{{ asset('images/about_hero.png') }}" 
+                    <img src="{{ asset('images/about_hero.webp') }}" 
                          alt="Supplier minyak atsiri Indonesia" 
                          class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                     
@@ -71,7 +71,7 @@
             <div class="relative reveal">
                 <div class="absolute -inset-4 bg-botanical-muted rounded-[2rem] transform -rotate-2"></div>
                 <div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] border border-border">
-                    <img src="{{ asset('images/our_story_farm.png') }}" alt="Local Farming Process" class="w-full h-full object-cover">
+                    <img src="{{ asset('images/our_story_farm.webp') }}" alt="Local Farming Process" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-dark/10"></div>
                 </div>
                 

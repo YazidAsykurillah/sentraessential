@@ -29,5 +29,6 @@
     @include('frontend.partials.footer')
 
     @include('frontend.partials.scripts')
+    @include('frontend.partials.whatsapp')
 </body>
 </html>

@@ -7,6 +7,7 @@ use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
 use App\Models\Post;
 use App\Models\Product;
+use App\Models\PageSeo;
 
 class GenerateSitemap extends Command
 {
@@ -31,12 +32,18 @@ class GenerateSitemap extends Command
     {
         $this->info('Generating sitemap...');
 
-        $sitemap = Sitemap::create()
-            ->add(Url::create('/')->setPriority(1.0)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY))
-            ->add(Url::create('/about')->setPriority(0.8)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY))
-            ->add(Url::create('/products')->setPriority(0.9)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY))
-            ->add(Url::create('/blogs')->setPriority(0.9)->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY))
-            ->add(Url::create('/contact')->setPriority(0.7)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
+        $sitemap = Sitemap::create();
+
+        // Add Active Static Pages
+        PageSeo::where('is_active', true)->get()->each(function (PageSeo $pageSeo) use ($sitemap) {
+            $path = $pageSeo->slug === '/' ? '/' : '/' . ltrim($pageSeo->slug, '/');
+            $sitemap->add(
+                Url::create(url($path))
+                    ->setLastModificationDate($pageSeo->updated_at)
+                    ->setPriority(0.8)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
+            );
+        });
 
         // Add Active Products
         Product::where('status', 'published')->get()->each(function (Product $product) use ($sitemap) {

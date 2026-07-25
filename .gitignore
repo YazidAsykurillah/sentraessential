@@ -24,3 +24,5 @@ Homestead.yaml
 Thumbs.db
 /.agent
 /docs
+/public/sitemap.xml
+/public/sitemap.xml.gz

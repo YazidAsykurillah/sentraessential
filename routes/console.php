@@ -9,4 +9,4 @@ Artisan::command('inspire', function () {
 
 use Illuminate\Support\Facades\Schedule;
 
-Schedule::command('sitemap:generate')->everyMinute();
+Schedule::command('sitemap:generate')->daily();

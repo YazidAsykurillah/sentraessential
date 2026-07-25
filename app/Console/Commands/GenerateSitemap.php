@@ -39,7 +39,7 @@ class GenerateSitemap extends Command
             ->add(Url::create('/contact')->setPriority(0.7)->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY));
 
         // Add Active Products
-        Product::where('status', 'active')->get()->each(function (Product $product) use ($sitemap) {
+        Product::where('status', 'published')->get()->each(function (Product $product) use ($sitemap) {
             $sitemap->add(
                 Url::create(route('product.show', $product->slug))
                     ->setLastModificationDate($product->updated_at)

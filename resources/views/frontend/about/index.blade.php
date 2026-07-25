@@ -2,15 +2,11 @@
 
 @section('content')
 
-{{-- ============================================
-     SECTION 1: HERO
-     ============================================ --}}
+{{-- Hero Section --}}
 <section class="hero-gradient relative overflow-hidden">
     <div class="absolute inset-0 hero-pattern"></div>
-
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            
             {{-- Text Content --}}
             <div class="max-w-2xl lg:col-span-7 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">

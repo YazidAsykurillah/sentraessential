@@ -6,17 +6,19 @@
 <section class="bg-surface-alt py-16 md:py-24 relative overflow-hidden border-b border-border">
     <div class="absolute inset-0 hero-pattern opacity-5"></div>
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
-        <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white rounded-full border border-border shadow-sm mb-6">
-                <div class="w-2 h-2 bg-botanical rounded-full"></div>
-                <span class="text-xs font-medium text-dark tracking-wide uppercase">Blog & Artikel</span>
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            <div class="max-w-2xl lg:col-span-7 reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white rounded-full border border-border shadow-sm mb-6">
+                    <div class="w-2 h-2 bg-botanical rounded-full"></div>
+                    <span class="text-xs font-medium text-dark tracking-wide uppercase">News & Articles</span>
+                </div>
+                <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-dark leading-tight tracking-tight mb-6">
+                    Berita & Artikel Seputar <span class="text-botanical">Minyak Atsiri</span>
+                </h1>
+                <p class="text-base md:text-base text-dark/80 leading-relaxed mb-10 max-w-xl">
+                    Temukan informasi terbaru, tips, dan panduan seputar industri minyak atsiri, standar kualitas, serta tren manufaktur terkini.
+                </p>
             </div>
-            <h1 class="font-heading text-4xl md:text-5xl font-bold text-dark leading-tight tracking-tight mb-6">
-                Wawasan Seputar <span class="text-botanical">Minyak Atsiri</span>
-            </h1>
-            <p class="text-base text-dark/80 leading-relaxed">
-                Temukan informasi terbaru, tips, dan panduan seputar industri minyak atsiri, standar kualitas, serta tren manufaktur terkini.
-            </p>
         </div>
     </div>
 </section>

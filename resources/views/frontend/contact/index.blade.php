@@ -20,16 +20,13 @@
      ============================================ --}}
 <section class="bg-white py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        
         <div class="grid lg:grid-cols-2 gap-16 lg:gap-12">
-            
             {{-- Left Column: Contact Information & Map --}}
             <div class="reveal">
                 <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Informasi Kontak</p>
                 <h2 class="font-heading text-3xl font-bold text-dark leading-tight mb-8">
                     Mari Bekerja Sama
                 </h2>
-                
                 <div class="space-y-6 mb-10">
                     <div class="flex items-start gap-4">
                         <div class="w-12 h-12 rounded-xl bg-botanical-muted flex items-center justify-center shrink-0">

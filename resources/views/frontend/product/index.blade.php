@@ -10,7 +10,7 @@
             <div class="max-w-2xl lg:col-span-7 reveal">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white rounded-full border border-border shadow-sm mb-6">
                     <div class="w-2 h-2 bg-botanical rounded-full"></div>
-                    <span class="text-xs font-medium text-dark tracking-wide uppercase">Produk Sentra Essential</span>
+                    <span class="text-xs font-medium text-dark tracking-wide uppercase">Our Products</span>
                 </div>
                 <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-dark leading-tight tracking-tight mb-6">
                     Koleksi Minyak Atsiri <span class="text-botanical">Kualitas Terbaik</span>

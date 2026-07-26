@@ -253,9 +253,7 @@
                 @else
                 <span class="block text-xs font-semibold text-transparent uppercase tracking-wider italic mb-4">-</span>
                 @endif
-                <p class="text-sm text-dark leading-relaxed mb-6">
-                    {{ $product->short_description }}
-                </p>
+                
                 <div class="mt-auto pt-4 border-t border-border">
                     <a href="{{ route('product.show', $product->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group before:absolute before:inset-0 before:z-10">
                         Lihat Detail Produk

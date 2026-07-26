@@ -253,15 +253,6 @@
                 @else
                 <span class="block text-xs font-semibold text-transparent uppercase tracking-wider italic mb-4">-</span>
                 @endif
-
-                @if($product->price)
-                <div class="mb-4">
-                    <span class="text-lg font-bold text-accent">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
-                    @if($product->price_unit)
-                    <span class="text-xs text-dark/60 font-medium">/ {{ $product->price_unit }}</span>
-                    @endif
-                </div>
-                @endif
                 <p class="text-sm text-dark leading-relaxed mb-6">
                     {{ $product->short_description }}
                 </p>

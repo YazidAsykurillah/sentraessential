@@ -57,14 +57,6 @@
                     <p class="text-sm font-semibold text-dark/60 uppercase tracking-wider italic mb-4">({{ $product->botanical_name }})</p>
                     @endif
                     
-                    @if($product->price)
-                    <div class="mt-4 flex items-baseline gap-2">
-                        <span class="text-2xl md:text-3xl font-bold text-accent">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
-                        @if($product->price_unit)
-                        <span class="text-sm md:text-base text-dark/60 font-medium">/ {{ $product->price_unit }}</span>
-                        @endif
-                    </div>
-                    @endif
                 </div>
 
                 {{-- Badges --}}

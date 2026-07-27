@@ -35,7 +35,7 @@
         </div>
 
         {{-- Rich Content --}}
-        <div class="prose prose-lg max-w-none prose-headings:font-heading prose-headings:font-bold prose-headings:text-dark prose-a:text-accent hover:prose-a:text-accent-light prose-img:rounded-xl prose-p:my-4 prose-p:leading-relaxed prose-li:my-0 prose-ul:my-2 [&_li_p]:my-0">
+        <div class="prose prose-lg max-w-none prose-headings:font-heading prose-headings:font-bold prose-headings:text-dark prose-a:text-accent hover:prose-a:text-accent-light prose-img:rounded-xl prose-p:my-4 prose-p:leading-relaxed prose-li:my-0 prose-ul:my-2 [&_li_p]:my-0 prose-td:p-2 prose-th:p-2 [&_td_p]:my-0 [&_th_p]:my-0">
             {!! $post->content !!}
         </div>
 

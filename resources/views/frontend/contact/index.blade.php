@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- Hero Section --}}
-<section class="bg-surface-alt py-16 md:py-24 relative overflow-hidden border-b border-border">
+<section class="bg-surface-alt py-16 md:py-20 relative overflow-hidden border-b border-border">
     <div class="absolute inset-0 bg-gradient-to-br from-botanical/10 to-transparent"></div>
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative text-center">
         <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-dark leading-tight tracking-tight mb-6">

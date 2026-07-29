@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- Hero Section --}}
-<section class="bg-surface-alt py-16 md:py-24 relative overflow-hidden border-b border-border">
+<section class="bg-surface-alt py-16 md:py-20 relative overflow-hidden border-b border-border">
     <div class="absolute inset-0 hero-pattern opacity-5"></div>
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">

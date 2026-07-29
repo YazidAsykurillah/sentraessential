@@ -5,14 +5,14 @@
 {{-- Hero Section --}}
 <section class="hero-gradient relative overflow-hidden">
     <div class="absolute inset-0 hero-pattern"></div>
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-16">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-20">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             {{-- Left Column: Content --}}
             <div class="max-w-2xl lg:col-span-7 reveal">
                 {{-- Badge --}}
                 <div class="hidden md:inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
                     <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                    <span class="text-xs font-normal text-white/80 tracking-wide text-uppercase">
+                    <span class="text-xs font-normal text-white/80 tracking-wide uppercase">
                         {{ setting('site_tagline') ?? 'Your Trusted Supplier of Essential Oils' }}
                     </span>
                 </div>

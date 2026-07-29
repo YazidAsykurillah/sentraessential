@@ -10,7 +10,7 @@
             {{-- Left Column: Content --}}
             <div class="max-w-2xl lg:col-span-7 reveal">
                 {{-- Badge --}}
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
+                <div class="hidden md:inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
                     <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
                     <span class="text-xs font-normal text-white/80 tracking-wide text-uppercase">
                         {{ setting('site_tagline') ?? 'Your Trusted Supplier of Essential Oils' }}

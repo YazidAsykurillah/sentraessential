@@ -12,7 +12,7 @@
                 {{-- Badge --}}
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
                     <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                    <span class="text-xs font-semibold text-white/80 tracking-wide">
+                    <span class="text-xs font-normal text-white/80 tracking-wide text-uppercase">
                         {{ setting('site_tagline') ?? 'Your Trusted Supplier of Essential Oils' }}
                     </span>
                 </div>

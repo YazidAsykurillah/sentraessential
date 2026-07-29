@@ -17,7 +17,7 @@
                     </span>
                 </div>
 
-                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight md:leading-[1.2] tracking-tight mb-6">
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-relaxed md:leading-[1.2] tracking-tight mb-6">
                     Supplier Minyak Atsiri <span class="text-botanical-light">Untuk Perusahaan Manufaktur & Exportir</span>
                 </h1>
                 <p class="text-sm md:text-base text-white/60 leading-relaxed mb-10 max-w-xl">

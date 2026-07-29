@@ -12,7 +12,7 @@
                     <div class="w-2 h-2 bg-botanical rounded-full"></div>
                     <span class="text-xs font-medium text-dark tracking-wide uppercase">News & Articles</span>
                 </div>
-                <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-dark leading-tight tracking-tight mb-6">
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight md:leading-[1.2] tracking-tight mb-6">
                     Berita & Artikel Seputar <span class="text-botanical">Minyak Atsiri</span>
                 </h1>
                 <p class="text-base md:text-base text-dark/80 leading-relaxed mb-10 max-w-xl">

@@ -15,7 +15,7 @@
                     <span class="text-xs font-medium text-white/80 tracking-wide uppercase">About Sentra Essential Oil</span>
                 </div>
 
-                <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
+                <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight md:leading-[1.2] tracking-tight mb-6">
                     Mitra Strategis <span class="text-botanical-light">Kebutuhan Minyak Atsiri Anda</span>
                 </h1>
 

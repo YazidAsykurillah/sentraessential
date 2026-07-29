@@ -12,12 +12,12 @@
                 {{-- Badge --}}
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/15 mb-6">
                     <div class="w-2 h-2 bg-botanical-light rounded-full"></div>
-                    <span class="text-xs font-medium text-white/80 tracking-wide uppercase">
+                    <span class="text-xs font-semibold text-white/80 tracking-wide">
                         {{ setting('site_tagline') ?? 'Your Trusted Supplier of Essential Oils' }}
                     </span>
                 </div>
 
-                <h1 class="font-heading text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-6">
+                <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-6">
                     Supplier Minyak Atsiri <span class="text-botanical-light">Untuk Manufaktur & Exportir</span>
                 </h1>
 

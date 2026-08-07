@@ -246,8 +246,8 @@
                     <img src="{{ $product->image ? asset('storage/' . $product->image) : 'https://placehold.co/800x600/e2e8f0/475569?text=' . urlencode($product->english_name) }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt="{{ $product->english_name }}">
                 </div>
                 <div class="mb-2">
-                    <h3 class="font-heading text-lg font-bold text-dark mb-1">{{ $product->indonesian_name }}</h3>
-                    <span class="block text-sm font-medium text-dark/80">{{ $product->english_name }}</span>
+                    <h3 class="font-heading text-lg font-bold text-dark mb-1">{{ $product->english_name }}</h3>
+                    <span class="block text-sm font-medium text-dark/80">{{ $product->indonesian_name }}</span>
                 </div>
                 @if($product->botanical_name)
                 <span class="block text-xs font-semibold text-dark/70 uppercase tracking-wider italic mb-4">({{ $product->botanical_name }})</span>

@@ -15,13 +15,13 @@
                 <li>
                     <div class="flex items-center">
                         <svg class="w-4 h-4 text-dark/40 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        <a href="{{ route('products.index') }}" class="hover:text-accent transition-colors">Produk</a>
+                        <a href="{{ route('products.index') }}" class="hover:text-accent transition-colors">Product</a>
                     </div>
                 </li>
                 <li aria-current="page">
                     <div class="flex items-center">
                         <svg class="w-4 h-4 text-dark/40 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        <span class="text-dark font-medium">{{ $product->indonesian_name }}</span>
+                        <span class="text-dark font-medium">{{ $product->english_name }}</span>
                     </div>
                 </li>
             </ol>
@@ -50,9 +50,9 @@
                 {{-- Titles --}}
                 <div class="mb-6">
                     <h1 class="font-heading text-2xl md:text-4xl lg:text-4xl font-bold text-dark leading-tight mb-2">
-                        {{ $product->indonesian_name }}
+                        {{ $product->english_name }}
                     </h1>
-                    <p class="text-base md:text-xl text-dark/80 font-medium mb-1">{{ $product->english_name }}</p>
+                    <p class="text-base md:text-xl text-dark/80 font-medium mb-1">{{ $product->indonesian_name }}</p>
                     @if($product->botanical_name)
                     <p class="text-sm font-semibold text-dark/60 uppercase tracking-wider italic mb-4">({{ $product->botanical_name }})</p>
                     @endif
@@ -63,7 +63,7 @@
                 <div class="flex flex-wrap gap-2 mb-8">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-botanical-muted text-botanical rounded-full text-xs font-semibold">
                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-                        100% Murni
+                        100% Purity
                     </span>
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-earth-muted text-earth rounded-full text-xs font-semibold">
                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v2.789a4 4 0 0 1-.672 2.219l-4.73 7.096A4 4 0 0 0 7.001 20h9.998a4 4 0 0 0 3.322-6.236l-4.728-7.097A4 4 0 0 1 15 4.45V2"/><path d="M7 2h10"/><path d="M5.5 15h13"/></svg>
@@ -71,7 +71,7 @@
                     </span>
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-xs font-semibold">
                         <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                        Supply Industri
+                        Industrial Supply
                     </span>
                 </div>
 
@@ -86,15 +86,15 @@
 
                 {{-- CTA --}}
                 <div class="mt-auto bg-surface p-6 rounded-2xl border border-border/50">
-                    <h3 class="font-heading text-base md:text-lg lg:text-xl font-bold text-dark mb-2">Pesan Produk Ini</h3>
-                    <p class="text-sm text-dark/70 mb-5">Dapatkan penawaran khusus untuk pembelian skala besar atau rutin.</p>
+                    <h3 class="font-heading text-base md:text-lg lg:text-xl font-bold text-dark mb-2">Order This Product</h3>
+                    <p class="text-sm text-dark/70 mb-5">Get special offers for bulk or routine purchases.</p>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a href="{{ route('contact') }}" class="btn-primary w-full sm:w-auto text-center justify-center">
-                            Minta Penawaran
+                            Get a Quote
                         </a>
-                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', setting('whatsapp', '6281234567890')) }}?text=Halo,%20saya%20tertarik%20dengan%20{{ urlencode($product->indonesian_name) }}" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-8 sm:py-3.5 font-semibold rounded-lg border-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors whitespace-nowrap">
+                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', setting('whatsapp', '6281234567890')) }}?text=Hello,%20I%20am%20interested%20in%20{{ urlencode($product->english_name) }}" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-8 sm:py-3.5 font-semibold rounded-lg border-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors whitespace-nowrap">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                            Tanya WhatsApp
+                            WhatsApp Inquiry
                         </a>
                     </div>
                 </div>

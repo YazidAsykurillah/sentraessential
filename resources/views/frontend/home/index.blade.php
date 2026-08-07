@@ -77,7 +77,7 @@
                 </div>
                 <div>
                     <p class="text-sm font-semibold text-dark">100% Pure</p>
-                    <p class="text-xs text-muted mt-0.5">Tingkat Kemurnian</p>
+                    <p class="text-xs text-muted mt-0.5">Unadulterated</p>
                 </div>
             </div>
 

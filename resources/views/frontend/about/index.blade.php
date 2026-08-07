@@ -16,16 +16,16 @@
                 </div>
 
                 <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight md:leading-[1.2] tracking-tight mb-6">
-                    Mitra Strategis <span class="text-botanical-light">Kebutuhan Minyak Atsiri Anda</span>
+                    Strategic Partner <span class="text-botanical-light">For Your Essential Oil Needs</span>
                 </h1>
 
                 <p class="text-base md:text-base text-white/60 leading-relaxed mb-10 max-w-xl">
-                    Menyediakan minyak atsiri murni langsung dari sentra penyulingan terbaik di Indonesia untuk mendukung keberlanjutan industri Anda.
+                    Providing pure essential oils directly from the best distillation centers in Indonesia to support the sustainability of your industry.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{route('products.index')}}" class="btn-primary">
-                        Lihat Produk Kami
+                        View Our Products
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"/>
                             <polyline points="12 5 19 12 12 19"/>
@@ -35,7 +35,7 @@
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                         </svg>
-                        Hubungi Kami
+                        Contact Us
                     </a>
                 </div>
             </div>
@@ -95,25 +95,16 @@
             <div class="reveal reveal-delay-2">
                 <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Who We Are</p>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-8">
-                    Menjembatani Petani Lokal dengan Industri Global
+                    Bridging Local Farmers with Global Industries
                 </h2>
                 <p class="text-base text-dark leading-relaxed mb-4">
-                    Sentra Essential Oil adalah supplier minyak atsiri yang bergerak sebagai mitra
-                    pengadaan bahan baku strategis yang melayani pemenuhan kebutuhan minyak atsiri
-                    berskala industri untuk manufaktur dalam negeri 
-                    (sektor farmasi, kosmetik, herbal, jamu dan produk perawatan tubuh) 
-                    serta menjadi vendor pasokan volume stabil bagi perusahaan eksportir minyak atsiri di Indonesia.
+                    Sentra Essential Oil is an essential oil supplier that acts as a strategic raw material procurement partner serving the needs of industrial-scale essential oils for domestic manufacturing (pharmaceutical, cosmetic, herbal, traditional medicine, and personal care sectors) and also serves as a stable volume supply vendor for essential oil export companies in Indonesia.
                 </p>
                 <p class="text-base text-dark leading-relaxed mb-4">
-                    Kami memahami bahwa dalam industri manufaktur, konsistensi kualitas dan kestabilan pasokan
-                    adalah nyawa dari sebuah produksi. Oleh karena itu, kami membangun kemitraan langsung
-                    dengan para penyuling lokal di berbagai sentra penghasil atsiri di seluruh Indonesia.
+                    We understand that in the manufacturing industry, quality consistency and supply stability are the lifeblood of production. Therefore, we build direct partnerships with local distillers in various essential oil production centers across Indonesia.
                 </p>
                 <p class="text-base text-dark leading-relaxed mb-4">
-                    Dengan memotong rantai distribusi yang panjang, kami mampu menjamin 
-                    ketertelusuran (traceability) produk, memastikan bahwa setiap tetes minyak atsiri
-                    yang sampai ke fasilitas Anda adalah 100% murni, telah melewati penyaringan
-                    fisik yang ketat, dan siap memenuhi standar industri.
+                    By cutting out the long distribution chain, we are able to guarantee product traceability, ensuring that every drop of essential oil that reaches your facility is 100% pure, has passed rigorous physical filtration, and is ready to meet industry standards.
                 </p>    
             </div>
 
@@ -128,9 +119,9 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         
         <div class="text-center mb-16 reveal">
-            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Our Core Values</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Our Values</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Pilar Bisnis Kami
+                Business Pillars
             </h2>
         </div>
 
@@ -143,9 +134,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h3 class="font-heading text-base font-bold text-dark mb-3">Integritas Kualitas (Purity)</h3>
+                <h3 class="font-heading text-base font-bold text-dark mb-3">Integrity of Quality (Purity)</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Kami tidak berkompromi pada kemurnian. Setiap batch produk kami dijamin 100% alami tanpa adulterasi atau bahan sintetis tambahan.
+                    We do not compromise on purity. Every batch of our product is guaranteed to be 100% natural without adulteration or added synthetic materials.
                 </p>
             </div>
 
@@ -156,9 +147,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </div>
-                <h3 class="font-heading text-base font-bold text-dark mb-3">Kontinuitas Pasokan</h3>
+                <h3 class="font-heading text-base font-bold text-dark mb-3">Supply Continuity</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Melalui jaringan terintegrasi, kami mampu menjaga kestabilan volume pasokan untuk memenuhi target produksi industri Anda secara konsisten.
+                    Through an integrated network, we are able to maintain stable supply volumes to meet your industrial production targets consistently.
                 </p>
             </div>
 
@@ -169,9 +160,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                 </div>
-                <h3 class="font-heading text-base font-bold text-dark mb-3">Kemitraan Jangka Panjang</h3>
+                <h3 class="font-heading text-base font-bold text-dark mb-3">Strategic Partnership</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Kami memposisikan diri sebagai partner strategis. Pertumbuhan bisnis klien adalah ukuran kesuksesan kami yang sebenarnya.
+                    We position ourselves as strategic partners. Our clients' business growth is the true measure of our success.
                 </p>
             </div>
 
@@ -190,29 +181,29 @@
             <div class="reveal">
                 <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Supply Chain</p>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-8">
-                    Keunggulan Integrasi Hulu Kami
+                    Our Upstream Integration Advantage
                 </h2>
                 <p class="text-base text-dark mb-6 leading-relaxed">
-                    Sentra Essential Oil memiliki keunggulan kompetitif dalam penguasaan rantai pasok dari hulu. Kami bukan sekadar <i>trader</i>, melainkan bagian dari ekosistem penyulingan itu sendiri.
+                    Sentra Essential Oil has a competitive advantage in controlling the supply chain from the upstream. We are not just a trader, but part of the distillation ecosystem itself.
                 </p>
                 <ul class="space-y-4 text-dark">
                     <li class="flex items-start gap-3">
                         <div class="mt-1 w-5 h-5 rounded-full bg-botanical-muted flex items-center justify-center shrink-0">
                             <svg class="w-3 h-3 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <span><strong>Harga Kompetitif:</strong> Memutus perantara yang tidak perlu (middlemen).</span>
+                        <span><strong>Competitive Pricing:</strong> Eliminating unnecessary middlemen.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <div class="mt-1 w-5 h-5 rounded-full bg-botanical-muted flex items-center justify-center shrink-0">
                             <svg class="w-3 h-3 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <span><strong>Quality Control Internal:</strong> Filtrasi fisik dan homogenisasi standar di fasilitas kami.</span>
+                        <span><strong>Internal Quality Control:</strong> Physical filtration and standard homogenization at our facility.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <div class="mt-1 w-5 h-5 rounded-full bg-botanical-muted flex items-center justify-center shrink-0">
                             <svg class="w-3 h-3 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <span><strong>Legalitas Lengkap:</strong> Kami adalah PKP (Pengusaha Kena Pajak), siap menerbitkan Faktur Pajak untuk perusahaan Anda.</span>
+                        <span><strong>Complete Legality:</strong> We are a PKP (Taxable Business Entity), ready to issue Tax Invoices for your company.</span>
                     </li>
                 </ul>
             </div>
@@ -225,8 +216,8 @@
                     <div class="flex gap-4">
                         <div class="w-12 h-12 rounded-full bg-botanical text-white flex items-center justify-center font-bold font-heading shrink-0 text-xl shadow-lg shadow-botanical/20">1</div>
                         <div>
-                            <h4 class="font-bold text-dark text-lg">Sourcing Sentra Lokal</h4>
-                            <p class="text-sm text-dark/70 mt-1">Pengumpulan hasil distilasi langsung dari petani mitra terpilih.</p>
+                            <h4 class="font-bold text-dark text-lg">Sourcing from Local Centers</h4>
+                            <p class="text-sm text-dark/70 mt-1">Collecting distillation results directly from selected partner farmers.</p>
                         </div>
                     </div>
                     
@@ -237,8 +228,8 @@
                     <div class="flex gap-4">
                         <div class="w-12 h-12 rounded-full bg-earth text-white flex items-center justify-center font-bold font-heading shrink-0 text-xl shadow-lg shadow-earth/20">2</div>
                         <div>
-                            <h4 class="font-bold text-dark text-lg">Filtrasi & Homogenisasi</h4>
-                            <p class="text-sm text-dark/70 mt-1">Proses penyaringan tingkat industri untuk memisahkan residu dan air.</p>
+                            <h4 class="font-bold text-dark text-lg">Filtration & Homogenization</h4>
+                            <p class="text-sm text-dark/70 mt-1">Industrial-scale filtration process to separate residue and water.</p>
                         </div>
                     </div>
 
@@ -249,8 +240,8 @@
                     <div class="flex gap-4">
                         <div class="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-bold font-heading shrink-0 text-xl shadow-lg shadow-accent/20">3</div>
                         <div>
-                            <h4 class="font-bold text-dark text-lg">Pengiriman B2B</h4>
-                            <p class="text-sm text-dark/70 mt-1">Distribusi ke fasilitas pabrik atau gudang ekspor Anda dengan dokumen lengkap.</p>
+                            <h4 class="font-bold text-dark text-lg">B2B Delivery</h4>
+                            <p class="text-sm text-dark/70 mt-1">Distribution to your factory facility or export warehouse with complete documentation.</p>
                         </div>
                     </div>
 
@@ -269,24 +260,24 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
         <div class="max-w-3xl mx-auto text-center reveal">
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
-                Butuh Minyak Atsiri Untuk Bisnis Anda?
+                Need Essential Oils For Your Business?
             </h2>
             <p class="text-base text-white/80 leading-relaxed mb-10 max-w-2xl mx-auto">
-                Sentra Essential siap menjadi partner terpercaya dalam penyediaan minyak atsiri berkualitas untuk bisnis Anda. Hubungi kami untuk informasi ketersediaan produk, harga, dan sampel pra-pengiriman.
+                Sentra Essential is ready to be a trusted partner in supplying quality essential oils for your business. Contact us for information on product availability, pricing, and pre-shipment samples.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('contact') }}" class="btn-primary !bg-primary hover:!bg-primary-light">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
-                    Hubungi Kami
+                    Contact Us
                 </a>
                 <a href="{{ route('contact') }}" class="btn-primary !bg-accent hover:!bg-accent-light">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
                         <rect x="9" y="3" width="6" height="4" rx="1"/>
                     </svg>
-                    Dapatkan Sample Gratis
+                    Get Free Sample
                 </a>
             </div>
         </div>

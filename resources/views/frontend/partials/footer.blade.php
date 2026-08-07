@@ -38,12 +38,12 @@
                     </li>
                     <li>
                         <a href="{{ route('about') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Tentang Kami
+                            About Us
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('products.index') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Produk
+                            Products
                         </a>
                     </li>
                     <li>
@@ -53,7 +53,7 @@
                     </li>
                     <li>
                         <a href="{{ route('contact') }}" class="text-sm text-white/60 hover:text-white transition-colors duration-200 cursor-pointer">
-                            Kontak
+                            Contact Us
                         </a>
                     </li>
                 </ul>

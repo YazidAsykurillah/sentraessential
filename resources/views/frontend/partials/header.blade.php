@@ -31,7 +31,7 @@
                     Blog
                 </a>
                 <a href="{{ route('contact') }}" class="text-sm font-medium {{ request()->routeIs('contact') ? 'text-accent' : 'text-secondary' }} hover:text-accent transition-colors duration-200 cursor-pointer">
-                    Contact
+                    Contact Us
                 </a>
                 <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent-light transition-colors duration-200 cursor-pointer">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +72,7 @@
                     Blog
                 </a>
                 <a href="{{ route('contact') }}" class="block px-4 py-2.5 text-sm font-medium {{ request()->routeIs('contact') ? 'text-accent bg-surface-alt' : 'text-secondary' }} hover:bg-surface-alt rounded-lg transition-colors duration-200 cursor-pointer">
-                    Contact
+                    Contact Us
                 </a>
                 <div class="pt-2">
                     <a href="{{ route('contact') }}" class="block text-center px-4 py-2.5 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent-light transition-colors duration-200 cursor-pointer">

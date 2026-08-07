@@ -18,15 +18,15 @@
                 </div>
 
                 <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight md:leading-[1.2] tracking-tight mb-6">
-                    Supplier Minyak Atsiri <span class="text-botanical-light">Untuk Perusahaan Manufaktur & Exportir</span>
+                    Essential Oil Supplier <span class="text-botanical-light">For Manufacturing & Export Companies</span>
                 </h1>
                 <p class="text-sm md:text-base text-white/60 leading-relaxed mb-10 max-w-xl">
-                    Sentra Essential Oil adalah supplier minyak atsiri untuk industri farmasi, kosmetik, herbal, personal care dan perusahaan exportir Indonesia.
+                    Sentra Essential Oil is an essential oil supplier for pharmaceutical, cosmetic, herbal, personal care, and export companies in Indonesia.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{route('products.index')}}" class="btn-primary">
-                        Lihat Produk Kami
+                        View All Products
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"/>
                             <polyline points="12 5 19 12 12 19"/>
@@ -37,7 +37,7 @@
                             <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
                             <rect x="9" y="3" width="6" height="4" rx="1"/>
                         </svg>
-                        Dapatkan Sample Gratis
+                        Get Free Sample
                     </a>
                 </div>
             </div>
@@ -134,18 +134,18 @@
 
             {{-- Text Content --}}
             <div class="reveal">
-                <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">About Our Company</p>
+                <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">About Sentra Essential</p>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-8">
-                    Partner Kebutuhan Minyak Atsiri Anda
+                    Your Essential Oil Partner
                 </h2>
                 <p class="text-base text-dark leading-relaxed mb-6">
-                    Sentra Essential Oil adalah supplier minyak atsiri yang bergerak sebagai mitra pengadaan bahan baku strategis yang melayani pemenuhan kebutuhan minyak atsiri berskala industri untuk manufaktur dalam negeri (sektor farmasi, kosmetik, herbal, jamu dan produk perawatan tubuh) serta menjadi vendor pasokan volume stabil bagi perusahaan eksportir minyak atsiri di Indonesia.
+                    Sentra Essential Oil is an essential oil supplier that acts as a strategic raw material procurement partner serving the needs of industrial-scale essential oils for domestic manufacturing (pharmaceutical, cosmetic, herbal, traditional medicine, and personal care sectors) and also serves as a stable volume supply vendor for essential oil export companies in Indonesia.
                 </p>
                 <p class="text-base text-dark leading-relaxed mb-8">
-                    Melalui pengelolaan <i>supply chain</i> yang terintegrasi dengan sentra penyulingan di berbagai daerah, kami mampu mengamankan ketersediaan produk secara berkelanjutan demi menjaga kontinuitas produksi mitra bisnis kami.
+                    Through integrated supply chain management with distillation centers in various regions, we are able to secure sustainable product availability to maintain the continuity of our business partners' production.
                 </p>
                 <a href="{{ route('about') }}" class="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all duration-200 cursor-pointer">
-                    Selengkapnya Tentang Kami
+                    Learn More About Us
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
@@ -231,10 +231,10 @@
         <div class="text-center mb-14 reveal">
             <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Featured Products</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Produk Minyak Atsiri Unggulan
+                Our Featured Products
             </h2>
             <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
-                Berikut beberapa produk unggulan kami, setiap produk selalu melewati proses filtrasi dan standardisasi kualitas demi menjamin 100% kemurnian.
+                Here are some of our featured products. Each product undergoes filtration and quality standardization processes to ensure 100% purity.
             </p>
         </div>
 
@@ -257,7 +257,7 @@
                 
                 <div class="mt-auto pt-4 border-t border-border">
                     <a href="{{ route('product.show', $product->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors group before:absolute before:inset-0 before:z-10">
-                        Lihat Detail Produk
+                        View Details
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
@@ -267,7 +267,7 @@
             </div>
             @empty
             <div class="col-span-full text-center py-12">
-                <p class="text-dark/70">Belum ada produk unggulan.</p>
+                <p class="text-dark/70">No featured products yet.</p>
             </div>
             @endforelse
 
@@ -275,7 +275,7 @@
 
         <div class="mt-14 text-center reveal">
             <a href="{{route('products.index')}}" class="btn-primary group">
-                Lihat Semua Produk
+                View All Products
                 <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
@@ -295,10 +295,10 @@
         <div class="text-center mb-14 reveal">
             <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Why Choose Us</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Supplier Minyak Atsiri Yang Berintegritas
+                Integrity in Every Drop
             </h2>
             <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
-                Kami mengutamakan integritas produk sebagai standar operasional tertinggi, memastikan suplai yang stabil dan kualitas terbaik bagi setiap mitra.
+                We prioritize product integrity as our highest operational standard, ensuring stable supply and the best quality for every partner.
             </p>
         </div>
 
@@ -314,7 +314,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Physical Filtration & QC</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Kami selalu melakukan proses filtrasi fisik dan quality control yang terstandar untuk menjamin 100% kemurnian.
+                    We always perform physical filtration and standardized quality control to guarantee 100% purity.
                 </p>
             </div>
 
@@ -327,7 +327,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Pre-Shipment Sampling</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Kami menyediakan sampel produk sebelum pengiriman untuk verifikasi dan persetujuan laboratorium Anda.
+                    We provide product samples before shipment for your laboratory verification and approval.
                 </p>
             </div>
 
@@ -344,7 +344,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Complete Documentation</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Dokumen yang lengkap termasuk faktur pajak dan penerbitan PKP untuk transaksi yang aman.
+                    We provide complete documentation including tax invoices and PKP issuance for secure transactions.
                 </p>
             </div>
 
@@ -358,7 +358,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Sustainable Supply Chain</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Terintegrasi langsung dengan pusat distilasi di seluruh Indonesia untuk pasokan yang andal dan berkelanjutan.
+                    Through integrated supply chain management with distillation centers in various regions, we are able to secure sustainable product availability to maintain the continuity of our business partners' production.
                 </p>
             </div>
 
@@ -372,7 +372,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Industrial-Scale Fulfillment</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Mampu memenuhi pesanan volume besar untuk produsen dan kebutuhan volume yang stabil untuk ekspor.
+                    Capable of fulfilling large volume orders for producers and stable volume needs for export.
                 </p>
             </div>
 
@@ -388,7 +388,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Dedicated Partnership</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    Berkomitmen untuk memfasilitasi transaksi yang lancar dan menjaga kemitraan bisnis jangka panjang.
+                    We are committed to facilitating smooth transactions and maintaining long-term business partnerships.
                 </p>
             </div>
 
@@ -408,10 +408,10 @@
             <div class="lg:col-span-2 reveal">
                 <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Industries</p>
                 <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider mb-6">
-                    Industri Yang Kami Layani
+                    Industries We Serve
                 </h2>
                 <p class="text-base text-dark leading-relaxed">
-                    Minyak atsiri kami mendukung lini produksi di sektor manufaktur utama dan perusahaan exportir di Indonesia.
+                    Our essential oils support the production lines of major manufacturing sectors and export companies in Indonesia.
                 </p>
             </div>
 
@@ -425,7 +425,7 @@
                             <path d="m8.5 8.5 7 7"/>
                         </svg>
                     </div>
-                    <p class="text-sm font-semibold text-dark">Farmasi</p>
+                    <p class="text-sm font-semibold text-dark">Pharmaceuticals</p>
                 </div>
 
                 <div class="industry-card p-5 text-center cursor-pointer reveal reveal-delay-1">
@@ -436,7 +436,7 @@
                             <path d="M3 5h4"/>
                         </svg>
                     </div>
-                    <p class="text-sm font-semibold text-dark">Kosmetik</p>
+                    <p class="text-sm font-semibold text-dark">Cosmetics</p>
                 </div>
 
                 <div class="industry-card p-5 text-center cursor-pointer reveal reveal-delay-2">
@@ -483,12 +483,12 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
 
         <div class="text-center mb-16 reveal">
-            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Testimonial</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Testimonials</p>
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight section-divider section-divider-center">
-                Apa Kata Mitra Kami
+                What Our Partners Say
             </h2>
             <p class="text-base text-dark mt-6 max-w-2xl mx-auto">
-                Kepercayaan dan kepuasan mitra bisnis adalah prioritas utama kami. Berikut adalah pengalaman mereka bekerja sama dengan Sentra Essential Oil.
+                The trust and satisfaction of our business partners are our top priorities. Here are their experiences working with Sentra Essential Oil.
             </p>
         </div>
 
@@ -519,15 +519,15 @@
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="text-dark leading-relaxed mb-8 flex-grow">
-                            "Kualitas minyak atsiri dari Sentra sangat konsisten. Proses pengiriman selalu tepat waktu dan dilengkapi dengan dokumen pendukung yang lengkap. Sangat merekomendasikan untuk kebutuhan industri farmasi."
+                            "The quality of essential oils from Sentra is highly consistent. The delivery process is always on time and comes with complete supporting documentation. Highly recommended for pharmaceutical industry needs."
                         </p>
                         <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <div>
                                 <h4 class="font-bold text-dark text-sm mb-0.5">Budi Santoso</h4>
-                                <p class="text-xs font-semibold text-accent">Direktur Pengadaan</p>
+                                <p class="text-xs font-semibold text-accent">Procurement Director</p>
                             </div>
                             <div class="sm:text-right">
-                                <p class="text-xs text-muted">Perusahaan Farmasi Nasional</p>
+                                <p class="text-xs text-muted">Pharmaceutical Company</p>
                             </div>
                         </div>
                     </div>
@@ -544,7 +544,7 @@
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="text-dark leading-relaxed mb-8 flex-grow">
-                            "Kami bermitra dengan Sentra Essential Oil selama lebih dari dua tahun. Kemurnian Citronella Oil mereka sangat memenuhi standar tinggi yang kami tetapkan untuk produk personal care."
+                            "We have partnered with Sentra Essential Oil for over two years. The purity of their Citronella Oil strictly meets the high standards we set for personal care products."
                         </p>
                         <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <div>
@@ -552,7 +552,7 @@
                                 <p class="text-xs font-semibold text-accent">R&D Manager</p>
                             </div>
                             <div class="sm:text-right">
-                                <p class="text-xs text-muted">Produsen Personal Care</p>
+                                <p class="text-xs text-muted">Personal Care Manufacturer</p>
                             </div>
                         </div>
                     </div>
@@ -569,7 +569,7 @@
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="text-dark leading-relaxed mb-8 flex-grow">
-                            "Kapasitas pasokan yang besar dan stabil membuat Sentra menjadi partner andalan kami untuk memenuhi permintaan pasar ekspor. Harga kompetitif tanpa mengorbankan kualitas."
+                            "Large and stable supply capacity makes Sentra our reliable partner for fulfilling export market demands. Competitive prices without compromising quality."
                         </p>
                         <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <div>
@@ -577,7 +577,7 @@
                                 <p class="text-xs font-semibold text-accent">Supply Chain Head</p>
                             </div>
                             <div class="sm:text-right">
-                                <p class="text-xs text-muted">Perusahaan Eksportir</p>
+                                <p class="text-xs text-muted">Export Company</p>
                             </div>
                         </div>
                     </div>
@@ -594,7 +594,7 @@
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="text-dark leading-relaxed mb-8 flex-grow">
-                            "Essential oil dari Sentra sangat mudah diformulasikan ke dalam produk-produk skincare kami karena 100% murni tanpa campuran bahan sintetis. Sangat memuaskan."
+                            "Essential oils from Sentra are very easy to formulate into our skincare products because they are 100% pure without synthetic blends. Highly satisfying."
                         </p>
                         <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <div>
@@ -602,7 +602,7 @@
                                 <p class="text-xs font-semibold text-accent">Chief Formulator</p>
                             </div>
                             <div class="sm:text-right">
-                                <p class="text-xs text-muted">Pabrik Kosmetik Organik</p>
+                                <p class="text-xs text-muted">Organic Cosmetics Factory</p>
                             </div>
                         </div>
                     </div>
@@ -619,15 +619,15 @@
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="text-dark leading-relaxed mb-8 flex-grow">
-                            "Untuk kebutuhan produksi skala menengah, Sentra selalu responsif dan fleksibel. Minyak nilam dan cengkeh mereka memiliki aroma terapi yang sangat kuat dan murni."
+                            "For medium-scale production needs, Sentra is always responsive and flexible. Their Clove Oil has very strong and pure therapeutic aroma."
                         </p>
                         <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <div>
                                 <h4 class="font-bold text-dark text-sm mb-0.5">Faisal Rahman</h4>
-                                <p class="text-xs font-semibold text-accent">Pemilik Brand</p>
+                                <p class="text-xs font-semibold text-accent">Brand Owner</p>
                             </div>
                             <div class="sm:text-right">
-                                <p class="text-xs text-muted">Aromaterapi Lokal</p>
+                                <p class="text-xs text-muted">Local Aromatherapy</p>
                             </div>
                         </div>
                     </div>
@@ -644,7 +644,7 @@
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </div>
                         <p class="text-dark leading-relaxed mb-8 flex-grow">
-                            "Klien-klien kami sangat menyukai aroma essential oil yang diaplikasikan di spa kami. Pengiriman selalu on-time yang membuat manajemen operasional kami menjadi sangat tenang."
+                            "Our clients love the aroma of essential oils applied in our spa. Deliveries are always on time, which gives our operations management great peace of mind."
                         </p>
                         <div class="mt-auto pt-6 border-t border-border/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <div>
@@ -670,24 +670,24 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
         <div class="max-w-3xl mx-auto text-center reveal">
             <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark leading-tight mb-6">
-                Butuh Minyak Atsiri Untuk Bisnis Anda?
+                Need Essential Oils For Your Business?
             </h2>
             <p class="text-base text-dark leading-relaxed mb-10 max-w-2xl mx-auto">
-                Sentra Essential siap menjadi partner terpercaya dalam penyediaan minyak atsiri berkualitas untuk bisnis Anda. Hubungi kami untuk informasi ketersediaan produk, harga, dan sampel pra-pengiriman.
+                Sentra Essential is ready to be a trusted partner in providing quality essential oils for your business. Contact us for product availability, pricing, and pre-shipment samples.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('contact') }}" class="btn-primary !bg-primary hover:!bg-primary-light">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
-                    Hubungi Kami
+                    Contact Us
                 </a>
                 <a href="{{ route('contact') }}" class="btn-primary !bg-accent hover:!bg-accent-light">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
                         <rect x="9" y="3" width="6" height="4" rx="1"/>
                     </svg>
-                    Dapatkan Sample Gratis
+                    Get Free Sample
                 </a>
             </div>
         </div>

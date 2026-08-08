@@ -14,6 +14,8 @@
 
 <title>{{ $finalSeoTitle }}</title>
 
+<link rel="canonical" href="{{ url()->current() }}" />
+
 <meta name="description" content="{{ $finalSeoDesc }}">
 
 <meta property="og:title" content="{{ $finalSeoTitle }}">

@@ -7,10 +7,10 @@
     <div class="absolute inset-0 bg-gradient-to-br from-botanical/10 to-transparent"></div>
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative text-center">
         <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight md:leading-[1.2] tracking-tight mb-6">
-            Hubungi <span class="text-accent">Kami</span>
+            Contact <span class="text-accent">Us</span>
         </h1>
         <p class="text-base md:text-base text-dark/70 max-w-2xl mx-auto">
-            Tim kami siap membantu Anda dengan informasi produk, pengadaan bahan baku, atau pertanyaan kerja sama.
+            Our team is ready to assist you with product information, raw material procurement, or partnership inquiries.
         </p>
     </div>
 </section>
@@ -23,9 +23,9 @@
         <div class="grid lg:grid-cols-2 gap-16 lg:gap-12">
             {{-- Left Column: Contact Information & Map --}}
             <div class="reveal">
-                <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Informasi Kontak</p>
+                <p class="text-sm font-semibold uppercase tracking-wider text-accent mb-3">Contact Information</p>
                 <h2 class="font-heading text-3xl font-bold text-dark leading-tight mb-8">
-                    Mari Bekerja Sama
+                    Let's Collaborate
                 </h2>
                 <div class="space-y-6 mb-10">
                     <div class="flex items-start gap-4">
@@ -35,7 +35,7 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-sm font-semibold text-dark mb-1">Telepon</p>
+                            <p class="text-sm font-semibold text-dark mb-1">Phone</p>
                             <a href="tel:{{setting('phone')}}" class="text-base text-dark/70 hover:text-accent transition-colors">{{setting('phone')}}</a>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-sm font-semibold text-dark mb-1">Kantor Pusat</p>
+                            <p class="text-sm font-semibold text-dark mb-1">Head Office</p>
                             <p class="text-base text-dark/70">{{setting('address')}}</p>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
             {{-- Right Column: Contact Form --}}
             <div class="reveal reveal-delay-2">
                 <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-border">
-                    <h3 class="font-heading text-2xl font-bold text-dark mb-6">Kirim Pesan</h3>
+                    <h3 class="font-heading text-2xl font-bold text-dark mb-6">Send Us a Message</h3>
                     
                     @if(session('success'))
                         <div class="mb-6 p-4 rounded-xl bg-botanical-muted text-botanical font-medium border border-botanical/20 flex items-start gap-3">
@@ -106,10 +106,10 @@
                         </div>
 
                         <div>
-                            <label for="name" class="block text-sm font-semibold text-dark mb-1.5">Nama Lengkap <span class="text-red-500">*</span></label>
+                            <label for="name" class="block text-sm font-semibold text-dark mb-1.5">Full Name <span class="text-red-500">*</span></label>
                             <input type="text" name="name" id="name" value="{{ old('name') }}" required
                                 class="w-full px-4 py-3 rounded-xl border border-border bg-surface-alt focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors @error('name') border-red-500 ring-red-500/20 @enderror"
-                                placeholder="Masukkan nama lengkap Anda">
+                                placeholder="Enter your full name">
                             @error('name')
                                 <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                             @enderror
@@ -127,7 +127,7 @@
                             </div>
                             
                             <div>
-                                <label for="phone" class="block text-sm font-semibold text-dark mb-1.5">Nomor Telepon <span class="text-red-500">*</span></label>
+                                <label for="phone" class="block text-sm font-semibold text-dark mb-1.5">Phone Number <span class="text-red-500">*</span></label>
                                 <input type="text" name="phone" id="phone" value="{{ old('phone') }}" required
                                     class="w-full px-4 py-3 rounded-xl border border-border bg-surface-alt focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors @error('phone') border-red-500 ring-red-500/20 @enderror"
                                     placeholder="081234567890">
@@ -138,20 +138,20 @@
                         </div>
 
                         <div>
-                            <label for="subject" class="block text-sm font-semibold text-dark mb-1.5">Subjek <span class="text-red-500">*</span></label>
+                            <label for="subject" class="block text-sm font-semibold text-dark mb-1.5">Subject <span class="text-red-500">*</span></label>
                             <input type="text" name="subject" id="subject" value="{{ old('subject') }}" required
                                 class="w-full px-4 py-3 rounded-xl border border-border bg-surface-alt focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors @error('subject') border-red-500 ring-red-500/20 @enderror"
-                                placeholder="Permintaan Penawaran / Pertanyaan">
+                                placeholder="Request for Quotation / Inquiry">
                             @error('subject')
                                 <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                             @enderror
                         </div>
 
                         <div>
-                            <label for="message" class="block text-sm font-semibold text-dark mb-1.5">Pesan <span class="text-red-500">*</span></label>
+                            <label for="message" class="block text-sm font-semibold text-dark mb-1.5">Message <span class="text-red-500">*</span></label>
                             <textarea name="message" id="message" rows="5" required
                                 class="w-full px-4 py-3 rounded-xl border border-border bg-surface-alt focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors resize-y @error('message') border-red-500 ring-red-500/20 @enderror"
-                                placeholder="Tuliskan pesan atau kebutuhan Anda di sini...">{{ old('message') }}</textarea>
+                                placeholder="Write your message or needs here...">{{ old('message') }}</textarea>
                             @error('message')
                                 <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                             @enderror
@@ -159,7 +159,7 @@
 
                         <div class="pt-2">
                             <button type="submit" class="btn-primary w-full justify-center py-3.5">
-                                Kirim Pesan
+                                Send Message
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="22" y1="2" x2="11" y2="13"></line>
                                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>

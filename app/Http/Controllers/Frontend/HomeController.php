@@ -22,8 +22,8 @@ class HomeController extends Controller
 
         $featuredProducts = Product::where('status', 'published')
             ->where('is_featured', true)
-            ->orderBy('indonesian_name')
-            ->take(4)
+            ->orderBy('botanical_name')
+            ->take(8)
             ->get();
 
         return view('frontend.home.index', compact('posts', 'pageSeo', 'featuredProducts'));

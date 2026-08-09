@@ -78,7 +78,7 @@
                 {{-- Descriptions --}}
                 <div class="mb-10">
                     @if($product->description)
-                    <div class="prose prose-sm md:prose-base prose-dark prose-headings:font-heading prose-headings:font-bold prose-a:text-accent prose-img:rounded-2xl max-w-none">
+                    <div class="prose prose-md max-w-none prose-headings:font-heading prose-headings:font-bold prose-headings:text-dark prose-a:text-accent hover:prose-a:text-accent-light prose-img:rounded-xl prose-p:my-4 prose-p:leading-relaxed prose-li:my-0 prose-ul:my-2 [&_li_p]:my-0 prose-td:p-2 prose-th:p-2 [&_td_p]:my-0 [&_th_p]:my-0">
                         {!! $product->description !!}
                     </div>
                     @endif

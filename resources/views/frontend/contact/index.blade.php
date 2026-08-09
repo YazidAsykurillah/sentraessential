@@ -120,7 +120,7 @@
                                 <label for="email" class="block text-sm font-semibold text-dark mb-1.5">Email <span class="text-red-500">*</span></label>
                                 <input type="email" name="email" id="email" value="{{ old('email') }}" required
                                     class="w-full px-4 py-3 rounded-xl border border-border bg-surface-alt focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors @error('email') border-red-500 ring-red-500/20 @enderror"
-                                    placeholder="email@perusahaan.com">
+                                    placeholder="email@example.com">
                                 @error('email')
                                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                 @enderror

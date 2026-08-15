@@ -13,10 +13,10 @@
                     <span class="text-xs font-medium text-dark tracking-wide uppercase">News & Articles</span>
                 </div>
                 <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight md:leading-[1.2] tracking-tight mb-6">
-                    Berita & Artikel Seputar <span class="text-botanical">Minyak Atsiri</span>
+                    News & Articles About <span class="text-botanical">Essential Oil</span>
                 </h1>
                 <p class="text-base md:text-base text-dark/80 leading-relaxed mb-10 max-w-xl">
-                    Temukan informasi terbaru, tips, dan panduan seputar industri minyak atsiri, standar kualitas, serta tren manufaktur terkini.
+                    Find the latest information, tips, and guides about the essential oil industry, quality standards, and current manufacturing trends.
                 </p>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 
                 <div class="mt-auto pt-4 border-t border-border flex items-center justify-between">
                     <a href="{{ route('blogs.show', $post->slug) }}" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors relative z-20">
-                        Baca Selengkapnya
+                        Read More
                         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
@@ -66,7 +66,7 @@
             </div>
             @empty
             <div class="col-span-full text-center py-12">
-                <p class="text-dark/70">Belum ada artikel yang tersedia.</p>
+                <p class="text-dark/70">No articles available.</p>
             </div>
             @endforelse
 

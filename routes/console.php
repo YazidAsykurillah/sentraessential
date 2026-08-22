@@ -11,5 +11,5 @@ use Illuminate\Support\Facades\Schedule;
 
 // Schedule::command('sitemap:generate')->daily();
 Schedule::command('sitemap:generate')
-    ->everyMinute()
+    ->daily()
     ->appendOutputTo(storage_path('logs/sitemap-schedule.log'));

@@ -9,6 +9,7 @@ Artisan::command('inspire', function () {
 
 use Illuminate\Support\Facades\Schedule;
 
+// Schedule::command('sitemap:generate')->daily();
 Schedule::command('sitemap:generate')
-    ->daily()
+    ->everyMinute()
     ->appendOutputTo(storage_path('logs/sitemap-schedule.log'));

@@ -42,6 +42,7 @@ class ContactMessagesTable
                 //
             ])
             ->recordActions([
+                \Filament\Actions\ViewAction::make(),
                 EditAction::make(),
                 DeleteAction::make(),
             ]);

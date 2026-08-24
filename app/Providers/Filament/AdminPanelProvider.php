@@ -26,6 +26,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->sidebarCollapsibleOnDesktop()
             ->userMenuItems([
                 'profile' => \Filament\Navigation\MenuItem::make()
                     ->label('Profile')

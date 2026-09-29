@@ -67,7 +67,7 @@
      ============================================ --}}
 <section class="bg-white border-b border-border">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
             <div class="trust-badge reveal">
                 <div class="shrink-0 w-10 h-10 rounded-full bg-botanical-muted flex items-center justify-center">
@@ -96,19 +96,6 @@
             </div>
 
             <div class="trust-badge reveal reveal-delay-2">
-                <div class="shrink-0 w-10 h-10 rounded-full bg-botanical-muted flex items-center justify-center">
-                    <svg class="w-5 h-5 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        <path d="m9 12 2 2 4-4"/>
-                    </svg>
-                </div>
-                <div>
-                    <p class="text-sm font-semibold text-dark">PKP Certified</p>
-                    <p class="text-xs text-muted mt-0.5">Complete Tax Documentation</p>
-                </div>
-            </div>
-
-            <div class="trust-badge reveal reveal-delay-3">
                 <div class="shrink-0 w-10 h-10 rounded-full bg-earth-muted flex items-center justify-center">
                     <svg class="w-5 h-5 text-earth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
@@ -344,7 +331,7 @@
                 </div>
                 <h3 class="font-heading text-base font-bold text-dark mb-2">Complete Documentation</h3>
                 <p class="text-sm text-dark leading-relaxed">
-                    We provide complete documentation including tax invoices and PKP issuance for secure transactions.
+                    We provide complete documentation including such as GC-MS, MSDS and COA so that you can use our product with confidence.
                 </p>
             </div>
 

@@ -191,19 +191,19 @@
                         <div class="mt-1 w-5 h-5 rounded-full bg-botanical-muted flex items-center justify-center shrink-0">
                             <svg class="w-3 h-3 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <span><strong>Competitive Pricing:</strong> Eliminating unnecessary middlemen.</span>
+                        <span><strong>Competitive Pricing:</strong> We ensure that you get the best price for our products.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <div class="mt-1 w-5 h-5 rounded-full bg-botanical-muted flex items-center justify-center shrink-0">
                             <svg class="w-3 h-3 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <span><strong>Internal Quality Control:</strong> Physical filtration and standard homogenization at our facility.</span>
+                        <span><strong>Internal Quality Control:</strong> Physical filtration and homogenization at our facility.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <div class="mt-1 w-5 h-5 rounded-full bg-botanical-muted flex items-center justify-center shrink-0">
                             <svg class="w-3 h-3 text-botanical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
-                        <span><strong>Complete Legality:</strong> We are a PKP (Taxable Business Entity), ready to issue Tax Invoices for your company.</span>
+                        <span><strong>Complete Documentation:</strong> We provide complete documentation including GC-MS, MSDS and COA.</span>
                     </li>
                 </ul>
             </div>
